@@ -1,0 +1,3368 @@
+[
+  {
+    "module": "vm-service",
+    "orderType": "DISK_UPDATE",
+    "processName": "i18n_flow_model_vm_disk_update",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "key": "owner",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人"
+          },
+          {
+            "key": "ownerName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人名称"
+          },
+          {
+            "key": "instanceName",
+            "text": "bjpvltcmpap08494",
+            "value": "bjpvltcmpap08494",
+            "hidden": false,
+            "label": "虚拟机名称"
+          },
+          {
+            "key": "hostname",
+            "text": "windows-154-8",
+            "value": "windows-154-8",
+            "hidden": false,
+            "label": "主机名"
+          },
+          {
+            "key": "managementIp",
+            "text": "10.11.154.8",
+            "value": "10.11.154.8",
+            "hidden": false,
+            "label": "虚拟机IP"
+          },
+          {
+            "key": "remark",
+            "text": "test222",
+            "value": "test222",
+            "hidden": false,
+            "label": "备注"
+          },
+          {
+            "key": "os",
+            "text": "windows",
+            "value": "windows",
+            "hidden": false,
+            "label": "系统"
+          },
+          {
+            "key": "osVersion",
+            "text": "2022",
+            "value": "2022",
+            "hidden": false,
+            "label": "系统版本"
+          },
+          {
+            "key": "host",
+            "text": "10.11.144.13",
+            "value": "10.11.144.13",
+            "hidden": false,
+            "label": "宿主机"
+          },
+          {
+            "key": "disk",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "磁盘"
+          },
+          {
+            "key": "id",
+            "text": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "value": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "hidden": false,
+            "label": "虚拟机ID"
+          },
+          {
+            "key": "accountName",
+            "text": "VMware-Carizon",
+            "value": "VMware-Carizon",
+            "hidden": false,
+            "label": "云账号名称"
+          },
+          {
+            "key": "organizationName",
+            "text": "Fit2cloud",
+            "value": "Fit2cloud",
+            "hidden": false,
+            "label": "组织"
+          },
+          {
+            "key": "workspaceName",
+            "text": "test",
+            "value": "test",
+            "hidden": false,
+            "label": "工作空间"
+          },
+          {
+            "key": "regionName",
+            "text": "Datacenter",
+            "value": "Datacenter",
+            "hidden": false,
+            "label": "区域"
+          },
+          {
+            "key": "zoneName",
+            "text": "bjpepits01",
+            "value": "bjpepits01",
+            "hidden": false,
+            "label": "可用区"
+          },
+          {
+            "key": "osInfo",
+            "text": "Windows Server  64 位 2022",
+            "value": "Windows Server  64 位 2022",
+            "hidden": false,
+            "label": "操作系统"
+          },
+          {
+            "key": "applyUserName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "申请人"
+          },
+          {
+            "key": "createTime",
+            "text": "1737376263476",
+            "value": "1737376263476",
+            "hidden": false,
+            "label": "创建时间"
+          },
+          {
+            "key": "expiredTime",
+            "text": "1752928485746",
+            "value": "1752928485746",
+            "hidden": false,
+            "label": "到期时间"
+          },
+          {
+            "key": "diskName",
+            "text": ",Hard disk 1,NewDisk,NewDisk",
+            "value": ",Hard disk 1,NewDisk,NewDisk",
+            "hidden": false,
+            "label": "磁盘名称"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "key": "newDiskSize",
+            "text": "250",
+            "value": "250",
+            "hidden": false,
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "key": "datastoreName",
+            "text": "bjpvsp00001(Shared)",
+            "value": "bjpvsp00001",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "20",
+            "value": "20",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "30",
+            "value": "30",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "key": "owner",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人"
+          },
+          {
+            "key": "ownerName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人名称"
+          },
+          {
+            "key": "instanceName",
+            "text": "bjpvltcmpap08494",
+            "value": "bjpvltcmpap08494",
+            "hidden": false,
+            "label": "虚拟机名称"
+          },
+          {
+            "key": "hostname",
+            "text": "windows-154-8",
+            "value": "windows-154-8",
+            "hidden": false,
+            "label": "主机名"
+          },
+          {
+            "key": "managementIp",
+            "text": "10.11.154.8",
+            "value": "10.11.154.8",
+            "hidden": false,
+            "label": "虚拟机IP"
+          },
+          {
+            "key": "remark",
+            "text": "test222",
+            "value": "test222",
+            "hidden": false,
+            "label": "备注"
+          },
+          {
+            "key": "os",
+            "text": "windows",
+            "value": "windows",
+            "hidden": false,
+            "label": "系统"
+          },
+          {
+            "key": "osVersion",
+            "text": "2022",
+            "value": "2022",
+            "hidden": false,
+            "label": "系统版本"
+          },
+          {
+            "key": "host",
+            "text": "10.11.144.13",
+            "value": "10.11.144.13",
+            "hidden": false,
+            "label": "宿主机"
+          },
+          {
+            "key": "disk",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "磁盘"
+          },
+          {
+            "key": "id",
+            "text": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "value": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "hidden": false,
+            "label": "虚拟机ID"
+          },
+          {
+            "key": "accountName",
+            "text": "VMware-Carizon",
+            "value": "VMware-Carizon",
+            "hidden": false,
+            "label": "云账号名称"
+          },
+          {
+            "key": "organizationName",
+            "text": "Fit2cloud",
+            "value": "Fit2cloud",
+            "hidden": false,
+            "label": "组织"
+          },
+          {
+            "key": "workspaceName",
+            "text": "test",
+            "value": "test",
+            "hidden": false,
+            "label": "工作空间"
+          },
+          {
+            "key": "regionName",
+            "text": "Datacenter",
+            "value": "Datacenter",
+            "hidden": false,
+            "label": "区域"
+          },
+          {
+            "key": "zoneName",
+            "text": "bjpepits01",
+            "value": "bjpepits01",
+            "hidden": false,
+            "label": "可用区"
+          },
+          {
+            "key": "osInfo",
+            "text": "Windows Server  64 位 2022",
+            "value": "Windows Server  64 位 2022",
+            "hidden": false,
+            "label": "操作系统"
+          },
+          {
+            "key": "applyUserName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "申请人"
+          },
+          {
+            "key": "createTime",
+            "text": "1737376263476",
+            "value": "1737376263476",
+            "hidden": false,
+            "label": "创建时间"
+          },
+          {
+            "key": "expiredTime",
+            "text": "1752928485746",
+            "value": "1752928485746",
+            "hidden": false,
+            "label": "到期时间"
+          },
+          {
+            "key": "diskName",
+            "text": ",Hard disk 1,NewDisk,NewDisk",
+            "value": ",Hard disk 1,NewDisk,NewDisk",
+            "hidden": false,
+            "label": "磁盘名称"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "key": "newDiskSize",
+            "text": "250",
+            "value": "250",
+            "hidden": false,
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "key": "datastoreName",
+            "text": "bjpvsp00001(Shared)",
+            "value": "bjpvsp00001",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "20",
+            "value": "20",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "30",
+            "value": "30",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "key": "owner",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人"
+          },
+          {
+            "key": "ownerName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人名称"
+          },
+          {
+            "key": "instanceName",
+            "text": "bjpvltcmpap08494",
+            "value": "bjpvltcmpap08494",
+            "hidden": false,
+            "label": "虚拟机名称"
+          },
+          {
+            "key": "hostname",
+            "text": "windows-154-8",
+            "value": "windows-154-8",
+            "hidden": false,
+            "label": "主机名"
+          },
+          {
+            "key": "managementIp",
+            "text": "10.11.154.8",
+            "value": "10.11.154.8",
+            "hidden": false,
+            "label": "虚拟机IP"
+          },
+          {
+            "key": "remark",
+            "text": "test222",
+            "value": "test222",
+            "hidden": false,
+            "label": "备注"
+          },
+          {
+            "key": "os",
+            "text": "windows",
+            "value": "windows",
+            "hidden": false,
+            "label": "系统"
+          },
+          {
+            "key": "osVersion",
+            "text": "2022",
+            "value": "2022",
+            "hidden": false,
+            "label": "系统版本"
+          },
+          {
+            "key": "host",
+            "text": "10.11.144.13",
+            "value": "10.11.144.13",
+            "hidden": false,
+            "label": "宿主机"
+          },
+          {
+            "key": "disk",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "磁盘"
+          },
+          {
+            "key": "id",
+            "text": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "value": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "hidden": false,
+            "label": "虚拟机ID"
+          },
+          {
+            "key": "accountName",
+            "text": "VMware-Carizon",
+            "value": "VMware-Carizon",
+            "hidden": false,
+            "label": "云账号名称"
+          },
+          {
+            "key": "organizationName",
+            "text": "Fit2cloud",
+            "value": "Fit2cloud",
+            "hidden": false,
+            "label": "组织"
+          },
+          {
+            "key": "workspaceName",
+            "text": "test",
+            "value": "test",
+            "hidden": false,
+            "label": "工作空间"
+          },
+          {
+            "key": "regionName",
+            "text": "Datacenter",
+            "value": "Datacenter",
+            "hidden": false,
+            "label": "区域"
+          },
+          {
+            "key": "zoneName",
+            "text": "bjpepits01",
+            "value": "bjpepits01",
+            "hidden": false,
+            "label": "可用区"
+          },
+          {
+            "key": "osInfo",
+            "text": "Windows Server  64 位 2022",
+            "value": "Windows Server  64 位 2022",
+            "hidden": false,
+            "label": "操作系统"
+          },
+          {
+            "key": "applyUserName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "申请人"
+          },
+          {
+            "key": "createTime",
+            "text": "1737376263476",
+            "value": "1737376263476",
+            "hidden": false,
+            "label": "创建时间"
+          },
+          {
+            "key": "expiredTime",
+            "text": "1752928485746",
+            "value": "1752928485746",
+            "hidden": false,
+            "label": "到期时间"
+          },
+          {
+            "key": "diskName",
+            "text": ",Hard disk 1,NewDisk,NewDisk",
+            "value": ",Hard disk 1,NewDisk,NewDisk",
+            "hidden": false,
+            "label": "磁盘名称"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "key": "newDiskSize",
+            "text": "250",
+            "value": "250",
+            "hidden": false,
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "key": "datastoreName",
+            "text": "bjpvsp00001(Shared)",
+            "value": "bjpvsp00001",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "20",
+            "value": "20",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "30",
+            "value": "30",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "key": "owner",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人"
+          },
+          {
+            "key": "ownerName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "归属人名称"
+          },
+          {
+            "key": "instanceName",
+            "text": "bjpvltcmpap08494",
+            "value": "bjpvltcmpap08494",
+            "hidden": false,
+            "label": "虚拟机名称"
+          },
+          {
+            "key": "hostname",
+            "text": "windows-154-8",
+            "value": "windows-154-8",
+            "hidden": false,
+            "label": "主机名"
+          },
+          {
+            "key": "managementIp",
+            "text": "10.11.154.8",
+            "value": "10.11.154.8",
+            "hidden": false,
+            "label": "虚拟机IP"
+          },
+          {
+            "key": "remark",
+            "text": "test222",
+            "value": "test222",
+            "hidden": false,
+            "label": "备注"
+          },
+          {
+            "key": "os",
+            "text": "windows",
+            "value": "windows",
+            "hidden": false,
+            "label": "系统"
+          },
+          {
+            "key": "osVersion",
+            "text": "2022",
+            "value": "2022",
+            "hidden": false,
+            "label": "系统版本"
+          },
+          {
+            "key": "host",
+            "text": "10.11.144.13",
+            "value": "10.11.144.13",
+            "hidden": false,
+            "label": "宿主机"
+          },
+          {
+            "key": "disk",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "磁盘"
+          },
+          {
+            "key": "id",
+            "text": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "value": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "hidden": false,
+            "label": "虚拟机ID"
+          },
+          {
+            "key": "accountName",
+            "text": "VMware-Carizon",
+            "value": "VMware-Carizon",
+            "hidden": false,
+            "label": "云账号名称"
+          },
+          {
+            "key": "organizationName",
+            "text": "Fit2cloud",
+            "value": "Fit2cloud",
+            "hidden": false,
+            "label": "组织"
+          },
+          {
+            "key": "workspaceName",
+            "text": "test",
+            "value": "test",
+            "hidden": false,
+            "label": "工作空间"
+          },
+          {
+            "key": "regionName",
+            "text": "Datacenter",
+            "value": "Datacenter",
+            "hidden": false,
+            "label": "区域"
+          },
+          {
+            "key": "zoneName",
+            "text": "bjpepits01",
+            "value": "bjpepits01",
+            "hidden": false,
+            "label": "可用区"
+          },
+          {
+            "key": "osInfo",
+            "text": "Windows Server  64 位 2022",
+            "value": "Windows Server  64 位 2022",
+            "hidden": false,
+            "label": "操作系统"
+          },
+          {
+            "key": "applyUserName",
+            "text": "lijun.zhang",
+            "value": "lijun.zhang",
+            "hidden": false,
+            "label": "申请人"
+          },
+          {
+            "key": "createTime",
+            "text": "1737376263476",
+            "value": "1737376263476",
+            "hidden": false,
+            "label": "创建时间"
+          },
+          {
+            "key": "expiredTime",
+            "text": "1752928485746",
+            "value": "1752928485746",
+            "hidden": false,
+            "label": "到期时间"
+          },
+          {
+            "key": "diskName",
+            "text": ",Hard disk 1,NewDisk,NewDisk",
+            "value": ",Hard disk 1,NewDisk,NewDisk",
+            "hidden": false,
+            "label": "磁盘名称"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "key": "newDiskSize",
+            "text": "250",
+            "value": "250",
+            "hidden": false,
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "key": "datastoreName",
+            "text": "bjpvsp00001(Shared)",
+            "value": "bjpvsp00001",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "200",
+            "value": "200",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "20",
+            "value": "20",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "key": "datastoreName",
+            "text": "在与虚拟机相同目录中的存储器",
+            "value": "only-a-flag",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "key": "diskType",
+            "text": "精简置备",
+            "value": "THIN",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "key": "diskMode",
+            "text": "从属",
+            "value": "persistent",
+            "hidden": false,
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "key": "diskSize",
+            "text": "30",
+            "value": "30",
+            "hidden": false,
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "key": "redText",
+            "text": "null",
+            "hidden": false,
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "key": "mountDir",
+            "text": "/mnt",
+            "value": "/mnt",
+            "hidden": false,
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      }
+    ],
+    "description": "itsm test",
+    "applicant": "lijun.zhang",
+    "businessKey": "vm-202501221539-030244a8",
+    "createTime": "2025-01-22 15:39:40",
+    "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+    "resourceType": "CLOUD_DISK",
+    "processEventContext": {
+      "task": {
+        "taskId": "7aaa60aa-582d-4290-ab8d-fceafc868750",
+        "taskStep": 0,
+        "taskName": "提交申请",
+        "taskStatus": "COMPLETED",
+        "taskAssignee": "lijun.zhang",
+        "taskExecutor": "lijun.zhang",
+        "taskStartTime": 1737531581068,
+        "taskEndTime": 1737531581068,
+        "taskActivity": "8a58ee4b-cfdc-42df-a641-caf45557573c",
+        "processId": "165162f2-7f14-47c6-8bac-fd65671ddff2",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "businessType": "vm-service",
+        "businessKey": "vm-202501221539-030244a8",
+        "module": "vm-service",
+        "taskAction": "SUBMIT",
+        "taskActionContent": "lijun.zhang提交了一个订单",
+        "linkBusinessType": "APPROVE",
+        "taskChildStep": 0,
+        "taskRemarks": "提交申请"
+      },
+      "arguments": "SUBMIT",
+      "process": {
+        "processId": "165162f2-7f14-47c6-8bac-fd65671ddff2",
+        "processName": "i18n_flow_model_vm_disk_update",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1737531581058,
+        "deployId": "e605113d-783f-44fd-a27e-74c6ee1cc0bd",
+        "businessKey": "vm-202501221539-030244a8",
+        "businessType": "vm-service",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "module": "vm-service"
+      }
+    }
+  },
+  {
+    "resourceType": "CLOUD_DISK",
+    "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+    "applicant": "lijun.zhang",
+    "businessKey": "vm-202501231426-340f69de",
+    "orderType": "DISK_UPDATE",
+    "processName": "i18n_flow_model_vm_disk_update",
+    "processEventContext": {
+      "process": {
+        "processId": "f5f37089-fbf6-4ee0-9b8a-ebd115c2d439",
+        "processName": "i18n_flow_model_vm_disk_update",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1737613569352,
+        "deployId": "e605113d-783f-44fd-a27e-74c6ee1cc0bd",
+        "businessKey": "vm-202501231426-340f69de",
+        "businessType": "vm-service",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "module": "vm-service"
+      },
+      "task": {
+        "taskId": "1fba9a95-d89b-4200-9809-9a6274c91612",
+        "taskStep": 0,
+        "taskName": "提交申请",
+        "taskStatus": "COMPLETED",
+        "taskAssignee": "lijun.zhang",
+        "taskExecutor": "lijun.zhang",
+        "taskStartTime": 1737613569425,
+        "taskEndTime": 1737613569425,
+        "taskActivity": "8a58ee4b-cfdc-42df-a641-caf45557573c",
+        "processId": "f5f37089-fbf6-4ee0-9b8a-ebd115c2d439",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "businessType": "vm-service",
+        "businessKey": "vm-202501231426-340f69de",
+        "module": "vm-service",
+        "taskAction": "SUBMIT",
+        "taskActionContent": "lijun.zhang提交了一个订单",
+        "linkBusinessType": "APPROVE",
+        "taskChildStep": 0,
+        "taskRemarks": "提交申请"
+      },
+      "arguments": "SUBMIT"
+    },
+    "createTime": "2025-01-23 14:26:09",
+    "description": "itsm test",
+    "module": "vm-service",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08494",
+            "text": "bjpvltcmpap08494",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-8",
+            "text": "windows-154-8",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.8",
+            "text": "10.11.154.8",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "text": "5a60c014-276e-4990-9f71-97091ed1cfbd",
+            "hidden": false,
+            "key": "id",
+            "label": "虚拟机ID"
+          },
+          {
+            "value": "VMware-Carizon",
+            "text": "VMware-Carizon",
+            "hidden": false,
+            "key": "accountName",
+            "label": "云账号名称"
+          },
+          {
+            "value": "Fit2cloud",
+            "text": "Fit2cloud",
+            "hidden": false,
+            "key": "organizationName",
+            "label": "组织"
+          },
+          {
+            "value": "test",
+            "text": "test",
+            "hidden": false,
+            "key": "workspaceName",
+            "label": "工作空间"
+          },
+          {
+            "value": "Datacenter",
+            "text": "Datacenter",
+            "hidden": false,
+            "key": "regionName",
+            "label": "区域"
+          },
+          {
+            "value": "bjpepits01",
+            "text": "bjpepits01",
+            "hidden": false,
+            "key": "zoneName",
+            "label": "可用区"
+          },
+          {
+            "value": "Windows Server  64 位 2022",
+            "text": "Windows Server  64 位 2022",
+            "hidden": false,
+            "key": "osInfo",
+            "label": "操作系统"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "applyUserName",
+            "label": "申请人"
+          },
+          {
+            "value": "1737376263476",
+            "text": "2025-01-20 20:31:03",
+            "hidden": false,
+            "key": "createTime",
+            "label": "创建时间"
+          },
+          {
+            "value": "1752928485746",
+            "text": "2025-07-19 20:34:45",
+            "hidden": false,
+            "key": "expiredTime",
+            "label": "到期时间"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "340",
+            "text": "340",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskName",
+            "hidden": false,
+            "key": "diskConfig_diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSizeBefore",
+            "hidden": false,
+            "key": "diskConfig_diskSizeBefore",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_update",
+            "hidden": false,
+            "key": "diskConfig_update",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_datastoreName",
+            "hidden": false,
+            "key": "diskConfig_datastoreName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskType",
+            "hidden": false,
+            "key": "diskConfig_diskType",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskMode",
+            "hidden": false,
+            "key": "diskConfig_diskMode",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSize",
+            "hidden": false,
+            "key": "diskConfig_diskSize",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_mountDir",
+            "hidden": false,
+            "key": "diskConfig_mountDir",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskName",
+            "hidden": false,
+            "key": "diskConfig_diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSizeBefore",
+            "hidden": false,
+            "key": "diskConfig_diskSizeBefore",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_update",
+            "hidden": false,
+            "key": "diskConfig_update",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_datastoreName",
+            "hidden": false,
+            "key": "diskConfig_datastoreName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskType",
+            "hidden": false,
+            "key": "diskConfig_diskType",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskMode",
+            "hidden": false,
+            "key": "diskConfig_diskMode",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSize",
+            "hidden": false,
+            "key": "diskConfig_diskSize",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_mountDir",
+            "hidden": false,
+            "key": "diskConfig_mountDir",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskName",
+            "hidden": false,
+            "key": "diskConfig_diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSizeBefore",
+            "hidden": false,
+            "key": "diskConfig_diskSizeBefore",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_update",
+            "hidden": false,
+            "key": "diskConfig_update",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_datastoreName",
+            "hidden": false,
+            "key": "diskConfig_datastoreName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskType",
+            "hidden": false,
+            "key": "diskConfig_diskType",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskMode",
+            "hidden": false,
+            "key": "diskConfig_diskMode",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSize",
+            "hidden": false,
+            "key": "diskConfig_diskSize",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_mountDir",
+            "hidden": false,
+            "key": "diskConfig_mountDir",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskName",
+            "hidden": false,
+            "key": "diskConfig_diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSizeBefore",
+            "hidden": false,
+            "key": "diskConfig_diskSizeBefore",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_update",
+            "hidden": false,
+            "key": "diskConfig_update",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_datastoreName",
+            "hidden": false,
+            "key": "diskConfig_datastoreName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskType",
+            "hidden": false,
+            "key": "diskConfig_diskType",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskMode",
+            "hidden": false,
+            "key": "diskConfig_diskMode",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSize",
+            "hidden": false,
+            "key": "diskConfig_diskSize",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_mountDir",
+            "hidden": false,
+            "key": "diskConfig_mountDir",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskName",
+            "hidden": false,
+            "key": "diskConfig_diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSizeBefore",
+            "hidden": false,
+            "key": "diskConfig_diskSizeBefore",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_update",
+            "hidden": false,
+            "key": "diskConfig_update",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_datastoreName",
+            "hidden": false,
+            "key": "diskConfig_datastoreName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskType",
+            "hidden": false,
+            "key": "diskConfig_diskType",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskMode",
+            "hidden": false,
+            "key": "diskConfig_diskMode",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_diskSize",
+            "hidden": false,
+            "key": "diskConfig_diskSize",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "磁盘数据的占位符，具体数值在diskConfigList中",
+            "text": "diskConfig_mountDir",
+            "hidden": false,
+            "key": "diskConfig_mountDir",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "[{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 1\\\",\\\"value\\\":\\\"Hard disk 1\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 1\\\",\\\"value\\\":\\\"Hard disk 1\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 2\\\",\\\"value\\\":\\\"Hard disk 2\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 2\\\",\\\"value\\\":\\\"Hard disk 2\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 3\\\",\\\"value\\\":\\\"Hard disk 3\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 3\\\",\\\"value\\\":\\\"Hard disk 3\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"40\\\",\\\"value\\\":\\\"40\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"40\\\",\\\"value\\\":\\\"40\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"50\\\",\\\"value\\\":\\\"50\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"50\\\",\\\"value\\\":\\\"50\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\"}]",
+            "text": "[{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 1\\\",\\\"value\\\":\\\"Hard disk 1\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 1\\\",\\\"value\\\":\\\"Hard disk 1\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"200\\\",\\\"value\\\":\\\"200\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 2\\\",\\\"value\\\":\\\"Hard disk 2\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 2\\\",\\\"value\\\":\\\"Hard disk 2\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"20\\\",\\\"value\\\":\\\"20\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 3\\\",\\\"value\\\":\\\"Hard disk 3\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"Hard disk 3\\\",\\\"value\\\":\\\"Hard disk 3\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"false\\\",\\\"value\\\":\\\"false\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"bjpvsp00001(Shared)\\\",\\\"value\\\":\\\"bjpvsp00001\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"30\\\",\\\"value\\\":\\\"30\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"40\\\",\\\"value\\\":\\\"40\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"40\\\",\\\"value\\\":\\\"40\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\"},{\"hidden\":false,\"key\":\"diskConfig\",\"label\":\"磁盘配置\",\"text\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"50\\\",\\\"value\\\":\\\"50\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\",\"value\":\"[{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskName\\\",\\\"label\\\":\\\"磁盘名称\\\",\\\"text\\\":\\\"NewDisk\\\",\\\"value\\\":\\\"NewDisk\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSizeBefore\\\",\\\"label\\\":\\\"（变更前）磁盘大小\\\",\\\"text\\\":\\\"0\\\",\\\"value\\\":\\\"0\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_update\\\",\\\"label\\\":\\\"是否扩容或新增\\\",\\\"text\\\":\\\"true\\\",\\\"value\\\":\\\"true\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_datastoreName\\\",\\\"label\\\":\\\"$[{i18n_vsphere_datastore}]\\\",\\\"text\\\":\\\"在与虚拟机相同目录中的存储器\\\",\\\"value\\\":\\\"only-a-flag\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskType\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_provisioning}]\\\",\\\"text\\\":\\\"精简置备\\\",\\\"value\\\":\\\"THIN\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskMode\\\",\\\"label\\\":\\\"$[{i18n_vsphere_disk_mode}]\\\",\\\"text\\\":\\\"从属\\\",\\\"value\\\":\\\"persistent\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_diskSize\\\",\\\"label\\\":\\\"变更后$[{i18n_vsphere_disk_size}]\\\",\\\"text\\\":\\\"50\\\",\\\"value\\\":\\\"50\\\"},{\\\"hidden\\\":false,\\\"key\\\":\\\"diskConfig_mountDir\\\",\\\"label\\\":\\\"$[{i18n_mount_point}]\\\",\\\"text\\\":\\\"/mnt\\\",\\\"value\\\":\\\"/mnt\\\"}]\"}]",
+            "hidden": false,
+            "key": "diskConfigList",
+            "label": "磁盘配置列表"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bk_app_code": "bk_cmdb",
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_username": "lijun.zhang@carizon.work",
+    "service_id": 32,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fast_approval": false,
+    "fields": [
+      {
+        "type": "STRING",
+        "key": "title",
+        "value": "[DISK_UPDATE]vm-202501241120-0fe76a71",
+        "required": true
+      },
+      {
+        "type": "CUSTOMTABLE",
+        "key": "PEIZHIXINXIBIAOGE",
+        "value": [
+          {
+            "CIPANMOSHIDANKUAICIPAN": "从属",
+            "CIPANZHIBEIDANKUAICIPAN": "精简置备",
+            "CIPANMINGCHENGDANKUAICIPAN": "Hard disk 1",
+            "BIANGENGQIANCIPANDAXIAODANK": "200",
+            "BIANGENGHOUCIPANDAXIAODANKU": "200",
+            "CUNCHUQIDANKUAICIPAN": "bjpvsp00001(Shared)",
+            "SHIFOUKUORONGHUOXINZENG": "false"
+          },
+          {
+            "CIPANMOSHIDANKUAICIPAN": "从属",
+            "CIPANZHIBEIDANKUAICIPAN": "精简置备",
+            "CIPANMINGCHENGDANKUAICIPAN": "Hard disk 2",
+            "BIANGENGQIANCIPANDAXIAODANK": "20",
+            "BIANGENGHOUCIPANDAXIAODANKU": "20",
+            "CUNCHUQIDANKUAICIPAN": "bjpvsp00001(Shared)",
+            "SHIFOUKUORONGHUOXINZENG": "false"
+          },
+          {
+            "CIPANMOSHIDANKUAICIPAN": "从属",
+            "CIPANZHIBEIDANKUAICIPAN": "精简置备",
+            "CIPANMINGCHENGDANKUAICIPAN": "Hard disk 3",
+            "BIANGENGQIANCIPANDAXIAODANK": "30",
+            "BIANGENGHOUCIPANDAXIAODANKU": "30",
+            "CUNCHUQIDANKUAICIPAN": "bjpvsp00001(Shared)",
+            "SHIFOUKUORONGHUOXINZENG": "false"
+          },
+          {
+            "CIPANMOSHIDANKUAICIPAN": "从属",
+            "CIPANZHIBEIDANKUAICIPAN": "精简置备",
+            "CIPANMINGCHENGDANKUAICIPAN": "NewDisk",
+            "BIANGENGQIANCIPANDAXIAODANK": "0",
+            "BIANGENGHOUCIPANDAXIAODANKU": "40",
+            "CUNCHUQIDANKUAICIPAN": "在与虚拟机相同目录中的存储器",
+            "SHIFOUKUORONGHUOXINZENG": "true"
+          }
+        ],
+        "meta": {
+          "columns": [
+            {
+              "visible": true,
+              "required": false,
+              "name": "磁盘模式",
+              "key": "CIPANMOSHIDANKUAICIPAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "磁盘置备",
+              "key": "CIPANZHIBEIDANKUAICIPAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "磁盘名称",
+              "key": "CIPANMINGCHENGDANKUAICIPAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "变更前磁盘大小(GB)",
+              "key": "BIANGENGQIANCIPANDAXIAODANK",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "变更后磁盘大小(GB)",
+              "key": "BIANGENGHOUCIPANDAXIAODANKU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "存储器",
+              "key": "CUNCHUQIDANKUAICIPAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "是否扩容或新增",
+              "key": "SHIFOUKUORONGHUOXINZENG",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            }
+          ]
+        },
+        "required": false
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGYUANYIN",
+        "value": "itsm test",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "XUNIJISHENQINGREN",
+        "value": "lijun.zhang@carizon.work",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "DINGDANBIANHAO",
+        "value": "vm-202501241120-0fe76a71",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "ZUZHIGUANLIYUAN",
+        "value": "6byrlpv@carizon.work,binbin.sun@carizon.work,chaochao.zhang@carizon.work,f2c.mdl@carizon.work,jingze.li@carizon.work,jinli.zhang@carizon.work,jinliang.qi@carizon.work,lijun.zhang@carizon.work,ots00030@carizon.work,sunbinbin-test@carizon.work,vd70hj3@carizon.work,weiguang.cao@carizon.work",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "XITONGGUANLIYUAN",
+        "value": "ots00030@carizon.work,itsm@carizon.work,6byrlpv@carizon.work,chaochao.zhang@carizon.work,tao.liu@carizon.work,extern.jinqi.hao@carizon.work,jingze.li@carizon.work,jinliang.qi@carizon.work,it-test@carizon.work,feng.tian@carizon.work,test.20240517@carizon.work,naixu.zhu@carizon.work,weiguang.cao@carizon.work,jumpserver-login@carizon.work,f2c.mdl@carizon.work,jinli.zhang@carizon.work,lijun.zhang@carizon.work,sunbinbin-f2c@carizon.work,binbin.sun@carizon.work,jms-admin@carizon.work,vd70hj3@carizon.work,jormun@carizon.work,admin@carizon.work",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "SUZHUJI",
+        "value": "10.11.144.13",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XUNIJICHUANGJIANSHIJIAN",
+        "value": "2025-01-20 20:31:03",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XUNIJIBEIZHU",
+        "value": "test222",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XUNIJIGUISHUREN",
+        "value": "lijun.zhang",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XUNIJIDAOQISHIJIAN",
+        "value": "2025-07-19 20:34:45",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "ZUZHI",
+        "value": "Fit2cloud",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "ENVIRONMENTS",
+        "value": "TEST",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "IPDIZHI",
+        "value": "10.11.154.8",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "QUYU",
+        "value": "Datacenter",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "CAOZUOXITONG",
+        "value": "Windows Server  64 位 2022",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "YUNZHANGHAOMINGCHENG",
+        "value": "VMware-Carizon",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "PLACE",
+        "value": "北京主机房",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "FUNCTION",
+        "value": "App",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "KEYONGQU",
+        "value": "bjpepits01",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XUNIJIMINGCHENG",
+        "value": "bjpvltcmpap08494",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "GONGZUOKONGJIAN",
+        "value": "test",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "RUANJIAN",
+        "value": "MongoDB",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGREN",
+        "value": "lijun.zhang",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "ZHUJIMING",
+        "value": "windows-154-8",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "XIANGMU",
+        "value": "CMP",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "CAOZUOXITONGSHIFOUYOUITJINHANGWE",
+        "value": "Yes",
+        "required": true
+      }
+    ],
+    "meta": {}
+  },
+  {
+    "resourceType": "CLOUD_DISK",
+    "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+    "applicant": "lijun.zhang",
+    "businessKey": "vm-202502051800-4f9f51ff",
+    "orderType": "DISK_UPDATE",
+    "processName": "i18n_flow_model_vm_disk_update",
+    "processEventContext": {
+      "process": {
+        "processId": "e5214fcb-d814-4f5b-a235-4bb453ff1401",
+        "processName": "i18n_flow_model_vm_disk_update",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1738749617945,
+        "deployId": "fd939898-d1e7-4de6-8521-b50c8dafd679",
+        "businessKey": "vm-202502051800-4f9f51ff",
+        "businessType": "vm-service",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "module": "vm-service"
+      },
+      "task": {
+        "taskId": "c8301c77-4700-4574-a535-126c4b28367c",
+        "taskStep": 0,
+        "taskName": "提交申请",
+        "taskStatus": "COMPLETED",
+        "taskAssignee": "lijun.zhang",
+        "taskExecutor": "lijun.zhang",
+        "taskStartTime": 1738749617955,
+        "taskEndTime": 1738749617955,
+        "taskActivity": "8a58ee4b-cfdc-42df-a641-caf45557573c",
+        "processId": "e5214fcb-d814-4f5b-a235-4bb453ff1401",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "businessType": "vm-service",
+        "businessKey": "vm-202502051800-4f9f51ff",
+        "module": "vm-service",
+        "taskAction": "SUBMIT",
+        "taskActionContent": "lijun.zhang提交了一个订单",
+        "linkBusinessType": "APPROVE",
+        "taskChildStep": 0,
+        "taskRemarks": "提交申请"
+      },
+      "arguments": "SUBMIT"
+    },
+    "createTime": "2025-02-05 18:00:17",
+    "description": "itsm test",
+    "module": "vm-service",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08483",
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-6",
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.6",
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "290",
+            "text": "290",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "20",
+            "text": "20",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "30",
+            "text": "30",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "only-a-flag",
+            "text": "在与虚拟机相同目录中的存储器",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "40",
+            "text": "40",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08483",
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-6",
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.6",
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "290",
+            "text": "290",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "20",
+            "text": "20",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "30",
+            "text": "30",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "only-a-flag",
+            "text": "在与虚拟机相同目录中的存储器",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "40",
+            "text": "40",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08483",
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-6",
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.6",
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "290",
+            "text": "290",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "20",
+            "text": "20",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "30",
+            "text": "30",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "only-a-flag",
+            "text": "在与虚拟机相同目录中的存储器",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "40",
+            "text": "40",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08483",
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-6",
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.6",
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "290",
+            "text": "290",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "20",
+            "text": "20",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "30",
+            "text": "30",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "only-a-flag",
+            "text": "在与虚拟机相同目录中的存储器",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "40",
+            "text": "40",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "owner",
+            "label": "归属人"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人名称"
+          },
+          {
+            "value": "bjpvltcmpap08483",
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "windows-154-6",
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.154.6",
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "虚拟机IP"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "windows",
+            "text": "windows",
+            "hidden": false,
+            "key": "os",
+            "label": "系统"
+          },
+          {
+            "value": "2022",
+            "text": "2022",
+            "hidden": false,
+            "key": "osVersion",
+            "label": "系统版本"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘"
+          },
+          {
+            "value": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "text": ",Hard disk 1,Hard disk 2,Hard disk 3,NewDisk",
+            "hidden": false,
+            "key": "diskName",
+            "label": "磁盘名称"
+          },
+          {
+            "value": "250",
+            "text": "250",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "（变更前）磁盘大小"
+          },
+          {
+            "value": "290",
+            "text": "290",
+            "hidden": false,
+            "key": "newDiskSize",
+            "label": "（变更后）磁盘大小"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "20",
+            "text": "20",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "bjpvsp00001",
+            "text": "bjpvsp00001(Shared)",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "30",
+            "text": "30",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          },
+          {
+            "value": "only-a-flag",
+            "text": "在与虚拟机相同目录中的存储器",
+            "hidden": false,
+            "key": "datastoreName",
+            "label": "$[{i18n_vsphere_datastore}]"
+          },
+          {
+            "value": "THIN",
+            "text": "精简置备",
+            "hidden": false,
+            "key": "diskType",
+            "label": "$[{i18n_vsphere_disk_provisioning}]"
+          },
+          {
+            "value": "persistent",
+            "text": "从属",
+            "hidden": false,
+            "key": "diskMode",
+            "label": "$[{i18n_vsphere_disk_mode}]"
+          },
+          {
+            "value": "40",
+            "text": "40",
+            "hidden": false,
+            "key": "diskSize",
+            "label": "变更后$[{i18n_vsphere_disk_size}]"
+          },
+          {
+            "text": "null",
+            "hidden": false,
+            "key": "redText",
+            "label": "$[{i18_redText}]"
+          },
+          {
+            "value": "/mnt",
+            "text": "/mnt",
+            "hidden": false,
+            "key": "mountDir",
+            "label": "$[{i18n_mount_point}]"
+          }
+        ]
+      }
+    ]
+  }
+]
+

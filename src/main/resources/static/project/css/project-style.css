@@ -1,0 +1,337 @@
+/*!
+ * 项目CSS，有特殊需求就写在这里。
+**/
+
+/*!
+ * 项目CSS，有特殊需求就写在这里。
+**/
+
+
+table.db{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 20px;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+table.db tbody,thead,tr{
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+table.db td{
+    max-width: none;
+    min-width: 0px;
+    white-space: normal;
+    position: relative;
+    vertical-align: top;
+    word-wrap: break-word;
+    padding: 4px 16px;
+    text-align: left;
+    width: auto;
+}
+
+table md-switch {
+    margin: 0 0;
+}
+
+.tree-table {
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    width: 100%;
+    outline: 0;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.tree-table > thead > tr, .tree-table > tbody > tr {
+    height: 44px;
+}
+
+.tree-table > thead > tr > th {
+    background-color: #e8e8e8;
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;;
+    padding: 0 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.tree-table > tbody > tr > td {
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tree-table > tbody > tr > td > md-input-container {
+    margin: 0;
+}
+
+.tree-table > tbody > tr > td:hover .hide-content * {
+    display: inline-block;
+}
+
+
+.nav-counter {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    min-width: 8px;
+    height: 24px;
+    width: 24px;
+    line-height: 20px;
+    margin-top: -11px;
+    padding: 0 3px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    background: #e23442;
+    border: 1px solid #911f28;
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(top, #e8616c, #dd202f);
+    background-image: -moz-linear-gradient(top, #e8616c, #dd202f);
+    background-image: -o-linear-gradient(top, #e8616c, #dd202f);
+    background-image: linear-gradient(to bottom, #e8616c, #dd202f);
+    -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.nav-counter-red {
+    background: #ff4e88;
+    border: 1px solid #ff4e88;
+    background-image: -webkit-linear-gradient(top, #e967b9, #df2576);
+    background-image: -moz-linear-gradient(top, #e967b9, #df2576);
+    background-image: -o-linear-gradient(top, #e967b9, #df2576);
+    background-image: linear-gradient(to bottom, #e967b9, #df2576);
+}
+
+
+.cloud-server-info md-tab-item {
+    line-height: 53px;
+}
+
+.cloud-server-info md-pagination-wrapper {
+    height: 53px;
+}
+
+.cloud-server-info md-tabs-canvas {
+    height: 53px;
+}
+
+.cloud-server-info md-tab-data {
+    height: 54px;
+    opacity: 1;
+    right: 0;
+    left: auto;
+    z-index: 20;
+}
+
+.cloud-server-info md-tab-data .md-button {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cloud-server-info md-tabs-content-wrapper {
+    height: 100%;
+}
+
+.cloud-server-info md-tabs-content-wrapper md-tab-content {
+    height: 100%;
+}
+
+.cloud-server-info md-tabs-content-wrapper md-tab-content md-content {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cloud-server-info md-tabs-content-wrapper md-tab-content md-content .cloud-server-info-md-content {
+    padding-bottom: 100px;
+}
+
+.cloud-server-info h6 {
+    font-weight: bolder;
+    font-size: 11px;
+    letter-spacing: .02em;
+    line-height: 12px;
+    margin: 10px 0 12px;
+}
+
+.cloud-server-info span {
+    word-break: break-all;
+    font-size: 12px;
+}
+
+.cloud-server-info .cloud-server-info-button {
+    margin: 0;
+}
+
+.cloud-server-info .key-duplicate {
+    color: #da4336;
+}
+
+.cloud-server-info .cloud-server-info-content {
+    padding: 24px;
+}
+
+.cloud-server-info .cloud-server-info-content p {
+    bottom: -5px;
+    margin: -8px 0 20px;
+    position: relative;
+    font-size: 12px;
+}
+
+.cloud-server-info .cloud-server-info-button-tag {
+    text-align: center;
+    width: 100%;
+    height: 26px;
+    margin: 0 0 15px;
+    border: 1.1px solid;
+    min-height: 0;
+    line-height: 0;
+    min-width: 0;
+    border-radius: 2px;
+}
+
+.cloud-server-info .cloud-server-info-button-tag md-icon {
+    margin-right: -5px;
+}
+
+.cloud-server-info .cloud-server-info-button-tag-disable {
+    box-shadow: none !important;
+    background: #fafafa !important;
+    border: 1.1px solid;
+    opacity: .6;
+    cursor: default;
+}
+
+.cloud-server-info md-icon {
+    font-size: 20px;
+}
+
+
+.security-group-div input {
+    order: 2;
+    display: block;
+    margin-top: 0;
+    background: none;
+    margin: 3px 0;
+    /*padding: 2px 2px 1px;*/
+    border-width: 0 0 1px;
+    line-height: 26px;
+    height: 30px;
+    -ms-flex-preferred-size: 26px;
+    border-radius: 0;
+    border-style: solid;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    /*border-left: 1px solid #e1e1e1;*/
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+.org-tree {
+    /*padding-top: 24px;*/
+    /*padding-left: 30px;*/
+    width: 40%;
+    height: 100%;
+    border-right: 1px solid #e3eaec;
+    font-size: 14px;
+    display: block;
+}
+
+.org-tree ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+}
+
+.org-tree li {
+    display: list-item;
+    line-height: 16px;
+    list-style-type: none;
+    margin: 16px 0px;
+    padding: 0px;
+    text-align: -webkit-match-parent;
+}
+
+.org-tree li a {
+    display: block;
+    color: #697480;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.org-tree li.current a, .org-tree li.current a i {
+    color: rgb(0,74,113);
+    font-weight: 600;
+}
+
+.org-tree p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #aeb8c3;
+    padding-left: 12px;
+}
+
+.org-tree li a i {
+    margin-right: 10px;
+    color: #b5bdc7;
+    font-size: 16px;
+}
+
+.org-list {
+    width: calc(100% - 260px);
+}
+
+.order-button {
+    color: #FFF;
+    padding: 1px 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 2px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.order-button-processing {
+    background-color: #095DB1;
+}
+
+.order-button-success {
+    background-color: #8FB143;
+}

@@ -1,0 +1,500 @@
+{
+  "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+  "businessKey": "vm-202412291115-3121efd6",
+  "resourceType": "VIRTUALMACHINE",
+  "module": "vm-service",
+  "createTime": "2024-12-29 11:15:32",
+  "applicant": "lijun.zhang",
+  "processEventContext": {
+    "task": {
+      "taskId": "fcc17a15-7500-4eec-9062-539885d2e01a",
+      "taskStep": 0,
+      "taskName": "提交申请",
+      "taskStatus": "COMPLETED",
+      "taskAssignee": "lijun.zhang",
+      "taskExecutor": "lijun.zhang",
+      "taskStartTime": 1735442135926,
+      "taskEndTime": 1735442135926,
+      "taskActivity": "8a58ee4b-cfdc-42df-a641-caf45557573c",
+      "processId": "03429b4d-4045-4f33-b97a-2c9a5135ea6e",
+      "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+      "businessType": "vm-service",
+      "businessKey": "vm-202412291115-3121efd6",
+      "module": "vm-service",
+      "taskAction": "SUBMIT",
+      "taskActionContent": "lijun.zhang提交了一个订单",
+      "linkBusinessType": "APPROVE",
+      "taskChildStep": 0,
+      "taskRemarks": "提交申请"
+    },
+    "arguments": "SUBMIT",
+    "process": {
+      "processId": "03429b4d-4045-4f33-b97a-2c9a5135ea6e",
+      "processName": "i18n_vm_application",
+      "processStatus": "PENDING",
+      "processCreator": "lijun.zhang",
+      "processStartTime": 1735442135912,
+      "deployId": "a90309c2-9e9e-44ab-bd9e-bdf60590e94b",
+      "businessKey": "vm-202412291115-3121efd6",
+      "businessType": "vm-service",
+      "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+      "module": "vm-service"
+    }
+  },
+  "businessDetails": [
+    {
+      "detailItems": [
+        {
+          "value": "1",
+          "label": "申请数量",
+          "key": "count",
+          "text": "1",
+          "hidden": false
+        },
+        {
+          "value": "3bbd238a-7001-4166-bbfb-04ffce0d89ae",
+          "label": "Place",
+          "key": "resource_pool_tag_f53c6ad6-7a49-4e83-a7de-45f447298278",
+          "text": "北京主机房",
+          "hidden": false
+        },
+        {
+          "value": "befe8ef1-24e7-424b-92a0-1cc8aff627e5",
+          "label": "Function",
+          "key": "resource_pool_tag_f8ec424a-0501-4065-a7bd-f3b5de346bc1",
+          "text": "App",
+          "hidden": false
+        },
+        {
+          "value": "72f5564b-bcf2-413c-9270-28a73c546d8d",
+          "label": "Environments",
+          "key": "resource_pool_tag_a752d43d-c94e-4304-8c5d-8289291e48bb",
+          "text": "TEST",
+          "hidden": false
+        },
+        {
+          "value": "CUSTOM",
+          "label": "资源池分配策略",
+          "key": "deploy_policy",
+          "text": "手动选择",
+          "hidden": false
+        },
+        {
+          "value": "5327d725-59cc-4164-906d-e02169eae4c3",
+          "label": "资源池",
+          "key": "userSelectResourcePoolIds",
+          "text": "BU_Server_03",
+          "hidden": false
+        },
+        {
+          "value": "[\"5327d725-59cc-4164-906d-e02169eae4c3\"]",
+          "label": "资源池",
+          "key": "selectResourcePoolIds",
+          "text": "BU_Server_03;",
+          "hidden": false
+        },
+        {
+          "value": "[]",
+          "label": "IP池",
+          "key": "ipPool",
+          "text": "[]",
+          "hidden": false
+        },
+        {
+          "value": "128",
+          "label": "CPU最大值(核)",
+          "key": "maxCpuCore",
+          "text": "128",
+          "hidden": false
+        },
+        {
+          "value": "256",
+          "label": "内存最大值(GB)",
+          "key": "maxMemory",
+          "text": "256",
+          "hidden": false
+        },
+        {
+          "value": "standard",
+          "label": "申请方式",
+          "key": "ipVersion",
+          "text": "标准申请",
+          "hidden": false
+        },
+        {
+          "label": "申请方式",
+          "key": "inputGroupBox",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "value": "auto_from_ippool",
+          "label": "IP分配策略",
+          "key": "ipAllocate",
+          "text": "自动分配",
+          "hidden": false
+        },
+        {
+          "value": "[\"dvportgroup-20154\"]",
+          "label": "网络适配器",
+          "key": "network",
+          "text": "vlan2214-CMP_Servers_1(dvSwitch);",
+          "hidden": false
+        },
+        {
+          "value": "[\"10.11.154.5\"]",
+          "label": "IP地址",
+          "key": "ipArray",
+          "text": "[\"10.11.154.5\"]",
+          "hidden": false
+        },
+        {
+          "value": "15",
+          "label": "实例类型",
+          "key": "instanceType",
+          "text": "vm.4C8G [4核8G]",
+          "hidden": false
+        },
+        {
+          "value": "4",
+          "label": "CPU 核数",
+          "key": "cpuCount",
+          "text": "4",
+          "hidden": false
+        },
+        {
+          "value": "1",
+          "label": "每个插槽内核数",
+          "key": "cpuPerSocket",
+          "text": "1",
+          "hidden": false
+        },
+        {
+          "value": "8192",
+          "label": "内存大小",
+          "key": "memory",
+          "text": "8192",
+          "hidden": false
+        },
+        {
+          "value": "200",
+          "label": "系统盘大小",
+          "key": "systemDiskSize",
+          "text": "200",
+          "hidden": false
+        },
+        {
+          "value": "0",
+          "label": "数据盘大小",
+          "key": "diskSize",
+          "text": "0",
+          "hidden": false
+        },
+        {
+          "value": "",
+          "label": "数据盘挂载点",
+          "key": "mountDir",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "value": "bjpvltcmpap08482",
+          "label": "机器名",
+          "key": "vmName",
+          "text": "bjpvltcmpap08482",
+          "hidden": false
+        },
+        {
+          "value": "PostPaid",
+          "label": "计费方式",
+          "key": "instanceChargeType",
+          "text": "按量付费",
+          "hidden": false
+        },
+        {
+          "value": "1",
+          "label": "默认租期",
+          "key": "expiredTime",
+          "text": "一天",
+          "hidden": false
+        },
+        {
+          "value": "-2",
+          "label": "默认回收策略",
+          "key": "recycleStrategy",
+          "text": "到期立即回收",
+          "hidden": false
+        },
+        {
+          "value": "CMP/T",
+          "label": "文件夹",
+          "key": "folderName",
+          "text": "CMP/T",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "hostname与机器名一致",
+          "key": "hostnameConsistentVMName",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "windows-154-5",
+          "label": "hostname",
+          "key": "hostname",
+          "text": "windows-154-5",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "备注是否必填",
+          "key": "remarkBol",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "test",
+          "label": "备注",
+          "key": "remark",
+          "text": "test",
+          "hidden": false
+        },
+        {
+          "value": "changeTemplateUserPwd",
+          "label": "重置密码",
+          "key": "changePasswordPolicy",
+          "text": "重置模板系统管理员密码",
+          "hidden": false
+        },
+        {
+          "value": "Administrator",
+          "label": "访客用户名",
+          "key": "guestUser",
+          "text": "Administrator",
+          "hidden": false
+        },
+        {
+          "value": "dQ3@vJ7.uH5:cW3!",
+          "label": "登录密码",
+          "key": "loginPassword",
+          "text": "dQ3@vJ7.uH5:cW3!",
+          "hidden": false
+        },
+        {
+          "value": "true",
+          "label": "是否加入域",
+          "key": "addDomain",
+          "text": "是",
+          "hidden": false
+        },
+        {
+          "value": "carizon.work",
+          "label": "域",
+          "key": "domainName",
+          "text": "carizon.work",
+          "hidden": false
+        },
+        {
+          "value": "carizon\\joindomain",
+          "label": "域用户",
+          "key": "domainUserName",
+          "text": "carizon\\joindomain",
+          "hidden": false
+        },
+        {
+          "value": "Baidu@12ab.com",
+          "label": "域密码",
+          "key": "domainUserPasswd",
+          "text": "Baidu@12ab.com",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "是否加入F5负载均衡",
+          "key": "addF5Pool",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "label": "挂载F5策略",
+          "key": "F5Policy",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "F5分区",
+          "key": "f5Partition",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "F5 Virtual Server",
+          "key": "f5VirtualId",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "虚拟服务器IP",
+          "key": "vsIp",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "虚拟服务器端口",
+          "key": "vsPort",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "负载策略",
+          "key": "vsLoadPolicy",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "label": "负载端口",
+          "key": "f5MemberPort",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "是否进行备份",
+          "key": "addVeeam",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "是否开启所有内存预留",
+          "key": "memoryReservation",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "开启内网带宽限制",
+          "key": "bandwidthLimitSwitch",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "10000",
+          "label": "内网带宽(Mbit/s)",
+          "key": "bandwidthSize",
+          "text": "10000",
+          "hidden": false
+        },
+        {
+          "value": "true",
+          "label": "是否启用CPU热添加",
+          "key": "cpuHotAddEnabled",
+          "text": "是",
+          "hidden": false
+        },
+        {
+          "value": "true",
+          "label": "是否启用内存热添加",
+          "key": "memHotAddEnabled",
+          "text": "是",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "审批自定义实例规格",
+          "key": "approveCustomInstanceType",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "是否安装监控代理",
+          "key": "monitoringAlarm",
+          "text": "否",
+          "hidden": false
+        },
+        {
+          "value": "[]",
+          "label": "安全组",
+          "key": "userSecurityGroupNames",
+          "text": "[]",
+          "hidden": false
+        },
+        {
+          "value": "true",
+          "label": "主机名自动>转为全小写",
+          "key": "__lowercase_vm_name",
+          "text": "是",
+          "hidden": false
+        },
+        {
+          "value": "true",
+          "label": "自动生成密码",
+          "key": "generatePassword",
+          "text": "是",
+          "hidden": false
+        },
+        {
+          "value": "[\"lowercase\",\"uppercase\",\"number\",\"speChars\"]",
+          "label": "密码生成规则",
+          "key": "generatePasswordRule",
+          "text": "小写字母;大写字母;数字;特殊字符;",
+          "hidden": false
+        },
+        {
+          "value": "edit",
+          "label": "账号/KEY(权限)",
+          "key": "passwordPermission",
+          "text": "工作空间可维护",
+          "hidden": false
+        },
+        {
+          "value": "16",
+          "label": "密码长度必须在12到26之间",
+          "key": "generatePasswordLength",
+          "text": "16",
+          "hidden": false
+        },
+        {
+          "value": "",
+          "label": "磁盘格式",
+          "key": "diskType",
+          "text": "无",
+          "hidden": false
+        },
+        {
+          "value": "2022",
+          "label": "vm_os_version",
+          "key": "vm_os_version",
+          "text": "2022",
+          "hidden": false
+        },
+        {
+          "value": "半年",
+          "label": "租期",
+          "key": "expiredTimeStr",
+          "text": "半年",
+          "hidden": false
+        },
+        {
+          "value": "windows",
+          "label": "版本",
+          "key": "vm_os",
+          "text": "windows",
+          "hidden": false
+        },
+        {
+          "value": "2025-06-21T03:22:10.497Z",
+          "label": "租期",
+          "key": "expiredTime",
+          "text": "2025-06-21T03:22:10.497Z",
+          "hidden": false
+        }
+      ]
+    }
+  ],
+  "processName": "i18n_vm_application",
+  "orderType": "CREATE",
+  "description": "访问内网服务用"
+}

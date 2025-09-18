@@ -1,0 +1,175 @@
+{
+  "version": "2.0",
+  "permissions": [
+    {
+      "id": "PCI_PROCESS:READ",
+      "name": "流程对接列表",
+      "resourceId": "PCI_PROCESS",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ACCOUNT:READ",
+      "name": "$[{i18n_api_account_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ACCOUNT:READ+EDIT",
+      "name": "$[{i18n_api_account_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ACCOUNT:READ+DELETE",
+      "name": "$[{i18n_api_account_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ACCOUNT:READ+VALIDATE",
+      "name": "$[{i18n_api_account_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ADDRESS:READ",
+      "name": "$[{i18n_api_address_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ADDRESS:READ+EDIT",
+      "name": "$[{i18n_api_address_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_ADDRESS:READ+DELETE",
+      "name": "$[{i18n_api_address_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_PARAMETER_MAPPING:READ",
+      "name": "$[{i18n_api_parameter_mapping_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_PARAMETER_MAPPING:READ+EDIT",
+      "name": "$[{i18n_api_parameter_mapping_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "API_PARAMETER_MAPPING:READ+DELETE",
+      "name": "$[{i18n_api_parameter_mapping_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "DOCKING_LOG:READ",
+      "name": "$[{i18n_docking_log}]",
+      "resourceId": "DOCKING_LOG",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "DOCKING_LOG:PUSH",
+      "name": "$[{i18n_docking_log}]",
+      "resourceId": "DOCKING_LOG",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "SYNC_ORG_USER:READ",
+      "name": "$[{i18n_sync_org_user_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "SYNC_ORG_USER:READ+EDIT",
+      "name": "$[{i18n_sync_org_user_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "SYNC_ORG_USER:READ+DELETE",
+      "name": "$[{i18n_sync_org_user_list}]",
+      "resourceId": "API_ACCOUNT",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "EXTERNAL_ORGANIZATION:READ",
+      "name": "$[{i18n_external_org_list_view}]",
+      "resourceId": "EXTERNAL_ORGANIZATION",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "EXTERNAL_ORGANIZATION:READ+EDIT",
+      "name": "$[{i18n_external_org_list_edit}]",
+      "resourceId": "EXTERNAL_ORGANIZATION",
+      "parentRoles": [
+        "ADMIN"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "PCI_PROCESS",
+      "name": "流程"
+    },
+    {
+      "id": "API_ACCOUNT",
+      "name": "$[{i18n_api_account}]"
+    },
+    {
+      "id": "API_ADDRESS",
+      "name": "$[{i18n_api_address}]"
+    },
+    {
+      "id": "API_PARAMETER_MAPPING",
+      "name": "$[{i18n_api_parameter_mapping}]"
+    },
+    {
+      "id": "DOCKING_LOG",
+      "name": "$[{i18n_docking_log}]"
+    },
+    {
+      "id": "EXTERNAL_ORGANIZATION",
+      "name": "$[{i18n_external_org_list}]"
+    }
+  ]
+}

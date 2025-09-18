@@ -1,0 +1,35 @@
+<div layout="column" layout-fill cg-busy="{promise:parameterMappingDeleteLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div>{{'i18n_delete_api_parameter_mapping' | translator:'删除API参数映射'}}</div>
+        </div>
+    </md-toolbar>
+    <div layout="row" flex>
+        <md-content flex="100" style="overflow: hidden">
+            <div>提示：以下展示的数据为要删除的 API 参数映射，请检查无误后点击删除按钮！</div>
+            <br>
+            <div flex>
+                <div layout="row" flex>
+                    <table dynamic-table items="deleteItems" columns="wizardDeleteColumns">
+                        <tbody>
+                        <tr ng-repeat="item in deleteItems track by $index"
+                            ng-class="{'tr-selected':selected === item.$$hashKey}">
+                            <td>{{item.originField}}</td>
+                            <td>{{item.description}}</td>
+                            <td>{{item.targetField}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </md-content>
+    </div>
+    <div layout="row" layout-align="start center" layout-margin>
+        <md-button class="md-raised" ng-click="closeDeleteDialog()">
+            {{'i18n_cancel' | translator:'取消'}}
+        </md-button>
+        <md-button class="md-primary md-raised" ng-click="deleteApiAccount()">
+            {{'i18n_delete' | translator:'删除'}}
+        </md-button>
+    </div>
+</div>

@@ -1,0 +1,240 @@
+
+### 创建ITSM流程单
+POST https://paas-test.carizon.work/api/c/compapi/v2/itsm/create_ticket/
+Content-Type: application/json
+
+{
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_app_code": "bk_cmdb",
+    "bk_username": "lijun.zhang@carizon.work",
+    "catalog_id": 3,
+    "service_id": 10,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fields": [{
+        "type": "STRING",
+        "key": "title",
+        "value": "dwr-1114-test-01"
+    }, {
+        "type": "TABLE",
+        "key": "ZIYUANLIEBIAO",
+        "value": [{
+            "vmName": "vm2",
+            "vmIp": "ip2"
+        }],
+        "choice": [
+            {
+                "key": "vmName",
+                "name": "资源名称",
+                "required": false
+            },
+            {
+                "key": "vmIp",
+                "name": "资源地址",
+                "required": false
+            }
+        ]
+    }],
+    "fast_approval": false
+}
+
+
+
+
+### 创建ITSM流程单
+POST https://paas-test.carizon.work/api/c/compapi/v2/itsm/create_ticket/
+Content-Type: application/json
+
+{
+    "bk_app_code": "bk_cmdb",
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_username": "lijun.zhang@carizon.work",
+    "service_id": 10,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fast_approval": false,
+    "fields": [{
+        "type": "STRING",
+        "key": "title",
+        "value": "[CREATE]vm-202411140102-0618e239",
+        "required": true
+    }, {
+        "type": "TABLE",
+        "key": "ZIYUANLIEBIAO",
+        "value": [{
+            "vmName": "dwr-1114-01"
+        },{
+            "vmHostname": "dwr-1114-01-host"
+        }],
+        "choice": [{
+            "type": "STRING",
+            "key": "vmName",
+            "required": false,
+            "name": "资源名称"
+        },{
+            "type": "STRING",
+            "key": "vmHostname",
+            "required": false,
+            "name": "资源名称主机"
+        }],
+        "required": false
+    }],
+    "meta": {}
+}
+
+### 查询ITSM流程单
+POST https://paas-test.carizon.work/api/c/compapi/v2/itsm/get_ticket_info/
+Content-Type: application/json
+
+{
+  "bk_app_code": "bk_cmdb",
+  "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+  "bk_username": "lijun.zhang@carizon.work",
+  "sn": "CRQ20250108000004"
+}
+
+### 创建ITSM流程单
+POST https://paas-test.carizon.work/api/c/compapi/v2/itsm/create_ticket/
+Content-Type: application/json
+
+{
+"bk_app_code": "bk_cmdb",
+"bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+"bk_username": "lijun.zhang@carizon.work",
+"service_id": 29,
+"service_type": "request",
+"creator": "lijun.zhang@carizon.work",
+"fast_approval": false,
+"fields": [
+{
+"type": "STRING",
+"key": "title",
+"value": "[CREATE]vm-202501122241-83bd0383",
+"required": true
+},
+{
+"type": "CUSTOMTABLE",
+"key": "PEIZHIXINXIBIAOGE",
+"value": [
+{
+"JIQIMING1": "fit2cloud-ae1d7b75",
+"SHIFOUJIARUYU1": "否",
+"CAOZUOXITONG1": "redhat",
+"ZUQI1": "一天",
+"SHUJUPANDAXIAO(GB)1": "100",
+"SHILILEIXING1": "vm.4C8G [4核8G]",
+"CAOZUOXITONGBANBEN1": "8.7",
+"SHUJUPANGUAZAIDIAN1": "/opt",
+"XITONGPANDAXIAO(GB)1": "100",
+"SHULIANG1": "1"
+},
+{
+"JIQIMING1": "fit2cloud-d9c08c19",
+"SHIFOUJIARUYU1": "否",
+"CAOZUOXITONG1": "redhat",
+"ZUQI1": "一天",
+"SHUJUPANDAXIAO(GB)1": "100",
+"SHILILEIXING1": "vm.4C8G [4核8G]",
+"CAOZUOXITONGBANBEN1": "8.7",
+"SHUJUPANGUAZAIDIAN1": "/opt",
+"XITONGPANDAXIAO(GB)1": "100",
+"SHULIANG1": "1"
+}
+],
+"choice": [
+{
+"type": "STRING",
+"key": "JIQIMING1",
+"required": false,
+"name": "机器名"
+},
+{
+"type": "BOOLEAN",
+"key": "SHIFOUJIARUYU1",
+"required": false,
+"name": "是>否加域"
+},
+{
+"type": "STRING",
+"key": "CAOZUOXITONG1",
+"required": false,
+"name": "操作系统"
+},
+{
+"type": "STRING",
+"key": "ZUQI1",
+"required": false,
+"name": "租期"
+},
+{
+"type": "STRING",
+"key": "SHUJUPANDAXIAO(GB)1",
+"required": false,
+"name": "数据盘大小"
+},
+{
+"type": "STRING",
+"key": "SHILILEIXING1",
+"required": false,
+"name": "实例类型"
+},
+{
+"type": "STRING",
+"key": "CAOZUOXITONGBANBEN1",
+"required": false,
+"name": "操作系统版本"
+},
+{
+"type": "STRING",
+"key": "SHUJUPANGUAZAIDIAN1",
+"required": false,
+"name": "数据盘挂载点"
+},
+{
+"type": "STRING",
+"key": "XITONGPANDAXIAO(GB)1",
+"required": false,
+"name": "系统盘大小"
+},
+{
+"type": "STRING",
+"key": "SHULIANG1",
+"required": false,
+"name": "申请数量"
+}
+],
+"required": false
+},
+{
+"type": "STRING",
+"key": "SHENQINGYUANYIN",
+"value": "test",
+"required": true
+},
+{
+"type": "STRING",
+"key": "SHENQINGREN",
+"value": "lijun.zhang",
+"required": true
+},
+{
+"type": "STRING",
+"key": "DINGDANBIANHAO",
+"value": "vm-202501122241-83bd0383",
+"required": true
+},
+{
+"type": "MEMBERS",
+"key": "ZUZHIGUANLIYUAN",
+"value": "6byrlpv,binbin.sun,chaochao.zhang,f2c.mdl,jingze.li,jinli.zhang,jinliang.qi,lijun.zhang,sunbinbin-test,vd70hj3,weiguang.cao",
+"required": true
+},
+{
+"type": "MEMBERS",
+"key": "XITONGGUANLIYUAN",
+"value": "itsm,6byrlpv,chaochao.zhang,tao.liu,extern.jinqi.hao,jingze.li,jinliang.qi,it-test,feng.tian,test.20240517,naixu.zhu,weiguang.cao,jumpserver-login,f2c.mdl,jinli.zhang,lijun.zhang,sunbinbin-f2c,binbin.sun,jms-admin,vd70hj3,jormun,admin",
+"required": true
+}
+],
+"meta": {}
+}

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fit2cloud.itsm.dao.ExtPciSyncSettingMapper">
+  <resultMap id="BaseResultMap" type="com.fit2cloud.itsm.model.response.PciSyncOrgSettingRep">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="sync_org_id" jdbcType="VARCHAR" property="syncOrgId" />
+    <result column="sync_org_name" jdbcType="VARCHAR" property="syncOrgName" />
+    <result column="sync_org_code" jdbcType="VARCHAR" property="syncOrgCode" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="is_sync" jdbcType="BIT" property="isSync" />
+    <result column="create_time" jdbcType="BIGINT" property="createTime" />
+    <result column="update_time" jdbcType="BIGINT" property="updateTime" />
+  </resultMap>
+
+  <resultMap id="BaseUserResultMap" type="com.fit2cloud.itsm.model.response.PciSyncUserSettingRep">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="sync_user_id" jdbcType="VARCHAR" property="syncUserId" />
+    <result column="sync_user_name" jdbcType="VARCHAR" property="syncUserName" />
+    <result column="sync_user_code" jdbcType="VARCHAR" property="syncUserCode" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="is_sync" jdbcType="BIT" property="isSync" />
+    <result column="create_time" jdbcType="BIGINT" property="createTime" />
+    <result column="update_time" jdbcType="BIGINT" property="updateTime" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="org_name" jdbcType="VARCHAR" property="orgName" />
+  </resultMap>
+
+  <resultMap id="ExternalSystemOrgResultMap" type="com.fit2cloud.itsm.model.response.PciExternalSystemOrgRep">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="nc_org_id" jdbcType="VARCHAR" property="ncOrgId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="short_name" jdbcType="VARCHAR" property="shortName" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="business_corporation" jdbcType="VARCHAR" property="businessCorporation" />
+    <result column="org_admin_no" jdbcType="VARCHAR" property="orgAdminNo" />
+    <result column="org_admin_name" jdbcType="VARCHAR" property="orgAdminName" />
+    <result column="business_unit_code" jdbcType="VARCHAR" property="businessUnitCode" />
+    <result column="org_admin_post_name" jdbcType="VARCHAR" property="orgAdminPostName" />
+    <result column="nc_org_parent_id" jdbcType="VARCHAR" property="ncOrgParentId" />
+    <result column="parent_name" jdbcType="VARCHAR" property="parentName" />
+    <result column="org_admin_post_id" jdbcType="VARCHAR" property="orgAdminPostId" />
+    <result column="business_unit_name" jdbcType="VARCHAR" property="businessUnitName" />
+    <result column="revoked" jdbcType="VARCHAR" property="revoked" />
+    <result column="company_code" jdbcType="VARCHAR" property="companyCode" />
+    <result column="company_cdescription" jdbcType="VARCHAR" property="companyCdescription" />
+    <result column="is_sync" jdbcType="BIT" property="isSync" />
+  </resultMap>
+
+  <resultMap id="ExternalSystemUserResultMap" type="com.fit2cloud.itsm.model.response.PciExternalSystemUserRep">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="work_no" jdbcType="VARCHAR" property="workNo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="position_serial_code" jdbcType="VARCHAR" property="positionSerialCode" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="company_code" jdbcType="VARCHAR" property="companyCode" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="business_unit_code" jdbcType="VARCHAR" property="businessUnitCode" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="org_name" jdbcType="VARCHAR" property="orgName" />
+    <result column="idcard_no" jdbcType="VARCHAR" property="idcardNo" />
+    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="position_code" jdbcType="VARCHAR" property="positionCode" />
+    <result column="position_name" jdbcType="VARCHAR" property="positionName" />
+    <result column="position_serial" jdbcType="VARCHAR" property="positionSerial" />
+    <result column="on_the_job" jdbcType="VARCHAR" property="onTheJob" />
+    <result column="type_code" jdbcType="VARCHAR" property="typeCode" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="business_unit_name" jdbcType="VARCHAR" property="businessUnitName" />
+    <result column="is_sync" jdbcType="BIT" property="isSync" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, sync_org_id, sync_org_name, sync_org_code, remark, is_sync, create_time, update_time
+  </sql>
+
+  <sql id="Base_User_Column_List">
+    id, sync_user_id, sync_user_name, sync_user_code, remark, is_sync, create_time, update_time, email, org_id, org_name
+  </sql>
+
+  <sql id="External_System_Org_Column_List">
+    soa.id, soa.parent_id, soa.nc_org_id, soa.name, soa.short_name, soa.type, soa.business_corporation,soa.org_admin_no,
+    soa.org_admin_name, soa.business_unit_code, soa.org_admin_post_name, soa.nc_org_parent_id, soa.parent_name,
+    soa.org_admin_post_id, soa.business_unit_name, soa.revoked, soa.company_code, soa.company_cdescription
+  </sql>
+
+  <sql id="External_System_User_Column_List">
+    soa.id, soa.work_no, soa.name, soa.position_serial_code, soa.sex, soa.company_code, soa.company_name, soa.business_unit_code,
+    soa.org_id, soa.org_name, soa.idcard_no, soa.phone_number, soa.email, soa.position_code, soa.position_name, soa.position_serial,
+    soa.on_the_job, soa.type_code, soa.type, soa.business_unit_name
+  </sql>
+
+  <select id="getSyncOrgList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from pci_sync_org_setting
+    <where>
+      <if test="record.id != null">
+        AND id = #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncOrgId != null">
+        AND sync_org_id = #{record.syncOrgId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncOrgName != null">
+        AND sync_org_name like #{record.syncOrgName,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncOrgCode != null">
+        AND sync_org_name like #{record.syncOrgCode,jdbcType=VARCHAR}
+      </if>
+      <if test="record.remark != null">
+        AND remark like #{record.remark,jdbcType=VARCHAR}
+      </if>
+      <if test="record.isSync != null">
+        AND is_sync = #{record.isSync,jdbcType=BIT}
+      </if>
+    </where>
+    <if test="record.sort != null">
+      order by ${record.sort}
+    </if>
+    <if test="record.sort == null">
+      order by update_time desc
+    </if>
+  </select>
+
+  <select id="getSyncUserList" resultMap="BaseUserResultMap">
+    select
+    <include refid="Base_User_Column_List" />
+    from pci_sync_user_setting
+    <where>
+      <if test="record.id != null">
+        AND id = #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncUserId != null">
+        AND sync_user_id = #{record.syncUserId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncUserName != null">
+        AND sync_user_name like #{record.syncUserName,jdbcType=VARCHAR}
+      </if>
+      <if test="record.email != null">
+        AND email like #{record.email,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncUserCode != null">
+        AND sync_user_code like #{record.syncUserCode,jdbcType=VARCHAR}
+      </if>
+      <if test="record.remark != null">
+        AND remark like #{record.remark,jdbcType=VARCHAR}
+      </if>
+      <if test="record.isSync != null">
+        AND is_sync = #{record.isSync,jdbcType=BIT}
+      </if>
+      <if test="record.orgId != null">
+        AND org_id = #{record.orgId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.orgName != null">
+        AND org_name like #{record.orgName,jdbcType=VARCHAR}
+      </if>
+    </where>
+    <if test="record.sort != null">
+      order by ${record.sort}
+    </if>
+    <if test="record.sort == null">
+      order by update_time desc
+    </if>
+  </select>
+
+  <select id="getExternalSystemOrgList" resultMap="ExternalSystemOrgResultMap">
+    select
+    <include refid="External_System_Org_Column_List" />,
+    pci_sync_org_setting.is_sync
+    from pci_external_system_org soa
+    left join pci_sync_org_setting on soa.id = pci_sync_org_setting.sync_org_id
+    <where>
+      <if test="record.id != null">
+        AND soa.id like #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.parentId != null">
+        AND soa.parent_id = #{record.parentId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.name != null">
+        AND soa.name like #{record.name,jdbcType=VARCHAR}
+      </if>
+      <if test="record.parentName != null">
+        AND soa.parent_name like #{record.parentName,jdbcType=VARCHAR}
+      </if>
+      <if test="record.isSync != null and  record.isSync == 0">
+        AND (pci_sync_org_setting.is_sync = #{record.isSync,jdbcType=BIT} or pci_sync_org_setting.is_sync is null)
+      </if>
+      <if test="record.isSync != null and  record.isSync == 1">
+        AND pci_sync_org_setting.is_sync = #{record.isSync,jdbcType=BIT}
+      </if>
+    </where>
+    <if test="record.sort != null">
+      order by ${record.sort}
+    </if>
+  </select>
+
+  <select id="getExternalSystemUserList" resultMap="ExternalSystemUserResultMap">
+    select
+    <include refid="External_System_User_Column_List" />,
+    pci_sync_user_setting.is_sync
+    from pci_external_system_user soa
+    left join pci_sync_user_setting on soa.id = pci_sync_user_setting.sync_user_id
+    <where>
+      <if test="record.id != null">
+        AND soa.id like #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.name != null">
+        AND soa.name like #{record.name,jdbcType=VARCHAR}
+      </if>
+      <if test="record.orgId != null">
+        AND soa.org_id = #{record.orgId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.orgName != null">
+        AND soa.org_name like #{record.orgName,jdbcType=VARCHAR}
+      </if>
+      <if test="record.isSync != null and  record.isSync == 0">
+        AND (pci_sync_user_setting.is_sync = #{record.isSync,jdbcType=BIT} or pci_sync_user_setting.is_sync is null)
+      </if>
+      <if test="record.isSync != null and  record.isSync == 1">
+        AND pci_sync_user_setting.is_sync = #{record.isSync,jdbcType=BIT}
+      </if>
+    </where>
+    <if test="record.sort != null">
+      order by ${record.sort}
+    </if>
+  </select>
+</mapper>

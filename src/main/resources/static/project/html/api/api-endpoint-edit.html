@@ -1,0 +1,82 @@
+<div layout="column" layout-fill cg-busy="{promise:apiEndPointEditLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div ng-if="edit">{{'i18n_edit_api_endpoint' | translator:'编辑API地址'}}</div>
+            <div ng-if="!edit">{{'i18n_create_api_endpoint' | translator:'新建API地址'}}</div>
+        </div>
+    </md-toolbar>
+    <md-content flex="auto">
+        <div wizard="wizard" ng-if="show">
+            <wizard-step id="1">
+                <form name="apiEndPointForm" class="md-padding">
+                    <single-select result="currentApiEndPoint.apiAccount" change="apiAccountChange()" disabled="edit"
+                                   required="true" options="apiAccountOptions" label="{{'i18n_api_account' | translator:'API 账号'}}"
+                                   value="id" text="name">
+                    </single-select>
+
+                    <single-select result="currentApiEndPoint.apiType" disabled="edit"
+                                   required="true" options="apiTypeOptions" label="{{'i18n_api_type' | translator:'API 功能'}}"
+                                   value="value" text="lable">
+                    </single-select>
+
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_api_address' | translator:'API 地址'}}</label>
+                        <input minlength="2" md-maxlength="255" required name="endpoint"
+                               ng-model="currentApiEndPoint.endpoint">
+                        <div ng-messages="apiEndPointForm.endpoint.$error">
+                            <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                            <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <single-select result="currentApiEndPoint.method"  change="testttt(currentApiEndPoint.method)"
+                                       required="true" options="apiMethodOptions" label="{{'i18n_api_endpoint_method' | translator:'请求方法'}}"
+                                       value="value" text="lable">
+                        </single-select>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm ng-if="currentApiEndPoint.method =='SOAP'" >
+                        <label>{{'i18n_api_endpoint_request_template' | translator}}</label>
+                        <textarea md-no-autogrow ng-model="currentApiEndPoint.requestTemplate" name="requestTemplate" rows="5"  ></textarea>
+                    </md-input-container>
+
+                    <div ng-if="showBkCoCmdbConfig()">
+
+                        <md-input-container class="md-block">
+                            <label style="margin-bottom: 10px"> {{'i18n_sync_host_associated' | translator: '是否同步并关联到主机模型'}}</label>
+                            <md-switch ng-model="currentApiEndPoint.customContent.syncHostAssociation" class="md-primary message-add-edit-template-switch"
+                                       ng-change="onSyncHostAssociationChange(currentApiAccount.syncHostAssociation)"
+                                       aria-label="enable">
+                            </md-switch>
+                        </md-input-container>
+
+                        <div ng-if="currentApiEndPoint.customContent.syncHostAssociation">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <single-select result="currentApiEndPoint.customContent.objId"
+                                               required="true" options="bkCmdbObject" label="模型"
+                                               change="onCustomContentObjIdChange()"
+                                               value="bkObjId" text="bkObjName">
+                                </single-select>
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <single-select result="currentApiEndPoint.customContent.objectAssociationId"
+                                               required="true" options="bkCmdbObjectAssociation" label="模型关联"
+                                               value="bkObjAsstId" text="bkObjAsstId">
+                                </single-select>
+                            </md-input-container>
+
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </wizard-step>
+        </div>
+    </md-content>
+</div>

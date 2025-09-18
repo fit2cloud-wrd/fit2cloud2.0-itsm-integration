@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "cmdb/services/CIServer",
+      "method": "SOAP",
+      "methodName": "saveCI",
+      "parameter": [
+        {
+          "origin_field": "ResHost",
+          "oirigin_field_type": "常量",
+          "target_field": "className",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "false",
+          "oirigin_field_type": "常量",
+          "target_field": "reslsDeleted",
+          "target_field_type": "String",
+          "description": "删除标志",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "lastUpdate",
+          "oirigin_field_type": "Long",
+          "target_field": "lastUpdate",
+          "target_field_type": "Long",
+          "description": "最后修改日期",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "",
+          "oirigin_field_type": "常量",
+          "target_field": "procurementPrice",
+          "target_field_type": "String",
+          "description": "采购价格",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "",
+          "oirigin_field_type": "常量",
+          "target_field": "venderID",
+          "target_field_type": "String",
+          "description": "生产厂商",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": 1,
+          "oirigin_field_type": "常量",
+          "target_field": "diskNumber",
+          "target_field_type": "String",
+          "description": "硬盘数量",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "itHddCapicity",
+          "target_field_type": "Integer",
+          "description": "单盘容量",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "createTime",
+          "oirigin_field_type": "String",
+          "target_field": "srvStartDate",
+          "target_field_type": "String",
+          "description": "服务开始时间",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}

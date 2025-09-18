@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+
+  itsm-integration:
+    image: registry.fit2cloud.com/north/itsm-integration:BRANCH
+    container_name: itsm-integration
+    volumes:
+      - share-volume:/opt/fit2cloud/share/plugins
+      - host-opt-fit2cloud-conf:/opt/fit2cloud/conf
+      - host-opt-fit2cloud-logs:/opt/fit2cloud/logs
+    mem_limit: 1024m
+    depends_on:
+      management-center:
+        condition: service_healthy
+      vm-service:
+        condition: service_healthy
+    networks:
+      - cmp-network

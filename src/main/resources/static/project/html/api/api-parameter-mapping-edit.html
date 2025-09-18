@@ -1,0 +1,201 @@
+<div layout="column" layout-fill cg-busy="{promise:parameterMappingEditLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div ng-if="edit">{{'i18n_edit_api_parameter_mapping' | translator:'编辑参数映射'}}</div>
+            <div ng-if="!edit">{{'i18n_create_api_parameter_mapping' | translator:'新建参数映射'}}</div>
+        </div>
+    </md-toolbar>
+    <md-content flex="auto">
+        <div wizard="wizard" ng-if="show">
+            <wizard-step id="1">
+                <form name="apiEndPointForm" class="md-padding">
+                    <!--api地址-->
+                    <single-select result="currentParameterMapping.apiId" change="apiEndpointChange()" disabled="edit"
+                                   required="true" options="apiEndpointOptions" label="{{'i18n_api_address' | translator:'API 地址'}}"
+                                   value="id" text="endpoint">
+                    </single-select>
+
+                    <!--源字段来源-->
+                    <single-select result="currentParameterMapping.originFieldSource"
+                                   required="true" options="originFieldSourceOptions"
+                                   label="{{'i18n_oirigin_field_source' | translator:'源字段来源'}}" change="originFieldSourceChange()"
+                                   value="value" text="lable">
+                    </single-select>
+
+                    <span ng-if="currentParameterMapping.originFieldSource==='table' && showSelectFiled">
+                        <!--源表-->
+                        <single-select result="currentParameterMapping.originFieldTable" ng-if="showSelectFiled"
+                                       required="true" options="originTableOptions" change="originTableChange()"
+                                       label="{{'i18n_oirigin_source_field_table' | translator:'源表'}}"
+                                       value="value" text="lable">
+                        </single-select>
+                        <!--源字段-->
+                        <single-select result="currentParameterMapping.originField"
+                                       required="true" options="originFieldOptions"
+                                       label="{{'i18n_origin_field' | translator:'源字段'}}"
+                                       value="value" text="name">
+                        </single-select>
+                        <!--源字段类型-->
+                        <single-select result="currentParameterMapping.originFieldType"
+                                       required="true" options="originFieldTypeOptions"
+                                       label="{{'i18n_oirigin_field_type' | translator:'源字段类型'}}"
+                                       value="value" text="lable">
+                        </single-select>
+                    </span>
+                    <span ng-if="currentParameterMapping.originFieldSource==='tag' && showSelectFiled">
+                        <!--标签-->
+                        <single-select result="currentParameterMapping.originField"
+                                       required="true" options="originFieldOptions"
+                                       label="{{'i18n_oirigin_source_tag' | translator:'标签'}}"
+                                       value="value" text="name">
+                        </single-select>
+                    </span>
+                    <span ng-if="currentParameterMapping.originFieldSource==='resourcePoolTag' && showSelectFiled">
+                        <!--标签-->
+                        <single-select result="currentParameterMapping.originField"
+                                       required="true" options="originFieldOptions"
+                                       label="{{'i18n_oirigin_source_tag' | translator:'标签'}}"
+                                       value="value" text="name">
+                        </single-select>
+                    </span>
+                    <span ng-if="currentParameterMapping.originFieldSource==='orderField'">
+                        <!--订单属性-->
+                        <single-select result="currentParameterMapping.originField"
+                                       required="true" options="originFieldTypeOptions"
+                                       label="{{'i18n_oirigin_source_order_field' | translator:'订单属性'}}"
+                                       value="key" text="label">
+                        </single-select>
+                    </span>
+
+                    <span ng-if="!showSelectFiled && currentParameterMapping.originFieldSource!='orderField'">
+                        <!--源字段常量值-->
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>{{'i18n_origin_field_constant_value' | translator:'源字段常量值'}}</label>
+                            <input minlength="1" md-maxlength="200" required name="originField"
+                                   ng-model="currentParameterMapping.originField">
+                            <div ng-messages="apiEndPointForm.originField.$error">
+                                <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                                <div ng-message="md-maxlength">{{'i18n_error_exceed_200_c' | translator:'不要超过200个字符'}}</div>
+                                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                    {{'i18n_length_range_1_200' | translator:'请在1-200字符以内'}}
+                                </div>
+                            </div>
+                        </md-input-container>
+                    </span>
+
+                    <!--源字段描述-->
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_oirigin_field_descreption' | translator:'源字段描述'}}</label>
+                        <input name="description" ng-model="currentParameterMapping.description">
+                    </md-input-container>
+
+                    <!--映射字段类型-->
+                    <single-select result="currentParameterMapping.targetFieldType"
+                                   required="true" options="targetFieldTypeOptions"
+                                   disabled="targetFieldTypeDisabled"
+                                   label="{{'i18n_target_field_type' | translator:'映射字段类型'}}"
+                                   value="value" text="lable">
+                    </single-select>
+
+                    <!--映射字段-->
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_target_field' | translator:'映射字段'}}</label>
+                        <input minlength="2" md-maxlength="50" required name="targetField"
+                               ng-model="currentParameterMapping.targetField">
+                        <div ng-messages="apiEndPointForm.targetField.$error">
+                            <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                            <div ng-message="md-maxlength">{{'i18n_error_exceed_50_c' | translator:'不要超过50个字符'}}</div>
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                {{'i18n_length_range_2_50' | translator:'请在2-50字符以内'}}
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <!--映射字段-->
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_field_tag' | translator:'字段标签'}}</label>
+                        <input minlength="2" md-maxlength="50" name="fieldTag"
+                               ng-model="currentParameterMapping.fieldTag">
+                    </md-input-container>
+                </form>
+            </wizard-step>
+            <wizard-step id="2">
+                <div ng-if="currentParameterMapping.originFieldType!=='Dictionary'" style="color:orange">提示：请检查字段的映射关系，确认无误后点击保存！</div>
+                <div ng-if="currentParameterMapping.originFieldType!=='Dictionary'" flex layout="column" class="dynamic-table" layout-fill>
+                    <table class="table" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th class="text-center">{{'i18n_oirigin_field_type' | translator:'源字段类型'}}</th>
+                                <th class="text-center">{{'i18n_origin_field' | translator:'源字段'}}</th>
+                                <th class="text-center">{{'i18n_target_field_type' | translator:'映射字段类型'}}</th>
+                                <th class="text-center">{{'i18n_target_field' | translator:'映射字段'}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-class="{'tr-selected':selected === item.$$hashKey}">
+                                <td>{{currentParameterMapping.originFieldType}}</td>
+                                <td ng-if="currentParameterMapping.originFieldSource==='tag'">
+                                    {{currentParameterMapping.originFieldName}}
+                                </td>
+                                <td ng-if="currentParameterMapping.originFieldSource!=='tag'">
+                                    {{currentParameterMapping.originField}}
+                                </td>
+                                <td>{{currentParameterMapping.targetFieldType}}</td>
+                                <td>{{currentParameterMapping.targetField}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="md-errors-spacer"></div>
+                </div>
+                <div ng-if="currentParameterMapping.originFieldType==='Dictionary'" style="color:orange">提示：请设置字段的字典映射！</div>
+                <div ng-if="currentParameterMapping.originFieldType==='Dictionary'" flex layout="column" class="dynamic-table" layout-fill>
+                    <md-button class="md-primary" ng-click="addDictionaryMapping()" style="width:15%;!important;">
+                        <md-icon>add_circle_outline</md-icon>
+                        {{'i18n_add_dictionary_mapping' | translator:'添加字典映射'}}
+                    </md-button>
+
+                    <table class="tree-table" style="width: 100%">
+                        <thead>
+                        <tr>
+                            <th class="text-center">{{'i18n_origin_field_value' | translator:'源字段值'}}</th>
+                            <th class="text-center">{{'i18n_target_field_value' | translator:'映射字段值'}}</th>
+                            <th class="text-center">{{'i18n_opt' | translator:'操作'}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in dictionaryMappingList track by $index">
+                            <td style="padding-left:0;padding-right:0;">
+                                <div class="md-block no-scope security-group-div" ng-if="item.isDefault">
+                                    <input class="md-input" ng-model="item.sourceFieldValue"
+                                           disabled ng-required="true" placeholder="{{'i18n_please_input_source_value' | translator:'请填写源字段值'}}"/>
+                                </div>
+                                <div class="md-block no-scope security-group-div"  ng-if="!item.isDefault">
+                                    <input class="md-input" ng-model="item.sourceFieldValue" ng-required="true"
+                                           placeholder="{{'i18n_please_input_source_value' | translator:'请填写源字段值'}}"/>
+                                </div>
+                            </td>
+                            <td style="padding-left:0;padding-right:0;">
+                                <div class="md-block no-scope security-group-div">
+                                    <input class="md-input" ng-model="item.targetFieldValue" ng-required="true"
+                                           placeholder="{{'i18n_please_input_target_value' | translator:'请填写映射字段值'}}"/>
+                                </div>
+                            </td>
+                            <td style="padding-left:0;padding-right:0;" class="operation-td" ng-if="item.isDefault">
+                            </td>
+                            <td style="padding-left:0;padding-right:0;" class="operation-td" ng-if="!item.isDefault">
+                                <md-button class="md-icon-button" ng-click="removeDictionaryMapping($index)" style="margin: 0 1px;">
+                                    <md-icon class="md-button-delete">delete</md-icon>
+                                    <md-tooltip md-delay="300">{{'i18n_delete' | translator:'删除'}}</md-tooltip>
+                                </md-button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div class="md-errors-spacer"></div>
+                </div>
+            </wizard-step>
+        </div>
+    </md-content>
+</div>

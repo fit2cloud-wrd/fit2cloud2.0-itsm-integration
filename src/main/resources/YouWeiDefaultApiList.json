@@ -1,0 +1,160 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "object/HOST/instance/_import",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "id",
+          "oirigin_field_type": "String",
+          "target_field": "cmpId",
+          "target_field_type": "String",
+          "description": "id",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "instanceUuid",
+          "target_field_type": "String",
+          "description": "instanceUuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "managementIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "status",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "applyUser",
+          "oirigin_field_type": "String",
+          "target_field": "applyUser",
+          "target_field_type": "String",
+          "description": "applyUser",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "object/HOST/instance/_import",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "id",
+          "oirigin_field_type": "String",
+          "target_field": "cmpId",
+          "target_field_type": "String",
+          "description": "id",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "instanceUuid",
+          "target_field_type": "String",
+          "description": "instanceUuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "managementIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "status",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "applyUser",
+          "oirigin_field_type": "String",
+          "target_field": "applyUser",
+          "target_field_type": "String",
+          "description": "applyUser",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}

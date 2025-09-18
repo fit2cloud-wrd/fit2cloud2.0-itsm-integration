@@ -1,0 +1,192 @@
+{
+  "version": "2.0",
+  "menu": [
+    {
+      "id": "api-management",
+      "order": 1,
+      "title": "$[{i18n_api_manage}]",
+      "icon": "cloud",
+      "children": [
+        {
+          "order": 1,
+          "title": "$[{i18n_api_account}]",
+          "name": "apiAccount",
+          "url": "/api/account",
+          "templateUrl": "project/html/api/api-account.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "API_ACCOUNT:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apiAddress",
+          "order": 2,
+          "title": "$[{i18n_api_address}]",
+          "name": "apiAddress",
+          "url": "/api/address",
+          "templateUrl": "project/html/api/api-endpoint.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "API_ACCOUNT:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apiParameterMapping",
+          "order": 3,
+          "title": "$[{i18n_api_parameter_mapping}]",
+          "name": "apiParameterMapping",
+          "url": "/api/parameterMapping",
+          "templateUrl": "project/html/api/api-parameter-mapping.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "API_PARAMETER_MAPPING:READ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "docking-log",
+      "order": 2,
+      "title": "$[{i18n_docking_log}]",
+      "icon": "info",
+      "children": [
+        {
+          "order": 1,
+          "title": "$[{i18n_cmdb_docking_log}]",
+          "name": "cmdbDockingLog",
+          "url": "/api/dockingLog/cmdb",
+          "templateUrl": "project/html/dockinglog/cmdb-docking-log.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "DOCKING_LOG:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "$[{i18n_process_docking_log}]",
+          "name": "processDockingLog",
+          "url": "/api/dockingLog/process",
+          "templateUrl": "project/html/dockinglog/process-docking-log.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "DOCKING_LOG:READ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sync-setting",
+      "order": 3,
+      "title": "$[{i18n_sync_setting}]",
+      "icon": "build",
+      "children": [
+        {
+          "order": 1,
+          "title": "$[{i18n_sync_org_list}]",
+          "name": "orgSyncSetting",
+          "url": "/api/syncsetting/org",
+          "templateUrl": "project/html/syncsetting/sync-org-setting.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "SYNC_ORG_USER:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "$[{i18n_sync_user_list}]",
+          "name": "userSyncSetting",
+          "url": "/api/syncsetting/user",
+          "templateUrl": "project/html/syncsetting/sync-user-setting.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "SYNC_ORG_USER:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "title": "$[{i18n_external_system_organization_list}]",
+          "name": "externalOrganization",
+          "url": "/externalOrganization",
+          "templateUrl": "project/html/syncsetting/external-organization-list.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "EXTERNAL_ORGANIZATION:READ"
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "$[{i18n_sync_error_log}]",
+          "name": "orgSyncDockingLogDetail",
+          "url": "/api/dockingLog/externalSystemSyncDetail",
+          "templateUrl": "project/html/dockinglog/external-system-sync-detail-log.html",
+          "requiredPermissions": [
+            {
+              "role": "ADMIN",
+              "logical": "OR",
+              "permissions": [
+                "DOCKING_LOG:READ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "流程对接",
+      "icon": "timeline",
+      "url": "/dashboard",
+      "name": "dashboard",
+      "templateUrl": "project/html/integration/process.html",
+      "requiredPermissions": [
+        {
+          "role": "ADMIN",
+          "logical": "OR",
+          "permissions": [
+            "PCI_PROCESS:READ"
+          ]
+        }
+      ]
+    },
+  ]
+}

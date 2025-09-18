@@ -1,0 +1,59 @@
+<div layout="column" layout-fill cg-busy="{promise:syncOrgEditLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div ng-if="edit">{{'i18n_edit_sync_org' | translator:'编辑同步机构'}}</div>
+            <div ng-if="!edit">{{'i18n_create_sync_org' | translator:'新建同步机构'}}</div>
+        </div>
+    </md-toolbar>
+    <md-content flex="auto">
+        <form name="syncOrgForm" class="md-padding">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>{{'i18n_name' | translator:'机构名称'}}</label>
+                <input minlength="2" md-maxlength="255" required name="syncOrgName"
+                       ng-model="syncOrg.syncOrgName">
+                <div ng-messages="syncOrgForm.syncOrgName.$error">
+                    <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                    <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                        {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>{{'i18n_code' | translator:'机构编码'}}</label>
+                <input minlength="2" md-maxlength="255" required name="syncOrgCode"
+                       ng-model="syncOrg.syncOrgCode">
+                <div ng-messages="syncOrgForm.syncOrgCode.$error">
+                    <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                    <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                        {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>{{'i18n_remark' | translator:'描述'}}</label>
+                <input minlength="2" md-maxlength="255" required name="remark"
+                       ng-model="syncOrg.remark">
+                <div ng-messages="syncOrgForm.remark.$error">
+                    <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                    <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                        {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                    </div>
+                </div>
+            </md-input-container>
+        </form>
+    </md-content>
+    <div layout="row" layout-align="start center" layout-margin>
+        <md-button class="md-raised" ng-click="closeSyncOrgEdit()">
+            {{'i18n_cancel' | translator:'取消'}}
+        </md-button>
+        <md-button class="md-raised md-primary" ng-click="submitSyncOrgEdit(syncOrg)"
+                   ng-disabled="syncOrgForm.$invalid">
+            {{'i18n_save' | translator:'保存'}}
+        </md-button>
+    </div>
+</div>

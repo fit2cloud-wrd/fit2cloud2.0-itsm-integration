@@ -1,0 +1,468 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "cmdb/api/v2/cis/2",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "uuid",
+          "target_field_type": "String",
+          "description": "instanceUuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "vmname",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "remoteIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip_address",
+          "target_field_type": "String",
+          "description": "remoteIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "all_ip_address",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "server_IP",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "operational_status",
+          "target_field_type": "String",
+          "description": "instanceStatus",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "hostname",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "hostname",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "owner",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "applyUser",
+          "oirigin_field_type": "String",
+          "target_field": "apply",
+          "target_field_type": "String",
+          "description": "applyUser",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "Virtual Machine",
+          "oirigin_field_type": "常量",
+          "target_field": "is_virtualized",
+          "target_field_type": "String",
+          "description": "固定值:Virtual Machine",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": "[\"Virtual Machine\"]"
+        },
+        {
+          "origin_field": "华为 HCS",
+          "oirigin_field_type": "常量",
+          "target_field": "vp_name",
+          "target_field_type": "String",
+          "description": "固定值:华为 HCS",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "os",
+          "oirigin_field_type": "Dictionary",
+          "target_field": "className",
+          "target_field_type": "String",
+          "description": "操作系统:Linux/Windows，需要手动添加字典映射",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": "os"
+        },
+        {
+          "origin_field": "osVersion",
+          "oirigin_field_type": "String",
+          "target_field": "os_version",
+          "target_field_type": "String",
+          "description": "osVersion",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "projectId",
+          "oirigin_field_type": "String",
+          "target_field": "app_id",
+          "target_field_type": "String",
+          "description": "projectId",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "projectId",
+          "oirigin_field_type": "String",
+          "target_field": "app_name",
+          "target_field_type": "String",
+          "description": "projectName",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "String",
+          "target_field": "cpu_core_count",
+          "target_field_type": "String",
+          "description": "cpu",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "String",
+          "target_field": "ram",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "String",
+          "target_field": "disk_space",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "region",
+          "oirigin_field_type": "String",
+          "target_field": "dcname",
+          "target_field_type": "String",
+          "description": "region",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "zone",
+          "oirigin_field_type": "String",
+          "target_field": "zone",
+          "target_field_type": "String",
+          "description": "zone",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "host_machine",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "cmdb/api/v2/cis/%s",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "uuid",
+          "target_field_type": "String",
+          "description": "instanceUuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "vmname",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "remoteIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip_address",
+          "target_field_type": "String",
+          "description": "remoteIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "all_ip_address",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "server_IP",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "operational_status",
+          "target_field_type": "String",
+          "description": "instanceStatus",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "hostname",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "hostname",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "owner",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "applyUser",
+          "oirigin_field_type": "String",
+          "target_field": "apply",
+          "target_field_type": "String",
+          "description": "applyUser",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "Virtual Machine",
+          "oirigin_field_type": "常量",
+          "target_field": "is_virtualized",
+          "target_field_type": "String",
+          "description": "固定值:Virtual Machine",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": "[\"Virtual Machine\"]"
+        },
+        {
+          "origin_field": "华为 HCS",
+          "oirigin_field_type": "常量",
+          "target_field": "vp_name",
+          "target_field_type": "String",
+          "description": "固定值:华为 HCS",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "os",
+          "oirigin_field_type": "Dictionary",
+          "target_field": "className",
+          "target_field_type": "String",
+          "description": "操作系统:Linux/Windows，需要手动添加字典映射",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": "os"
+        },
+        {
+          "origin_field": "osVersion",
+          "oirigin_field_type": "String",
+          "target_field": "os_version",
+          "target_field_type": "String",
+          "description": "osVersion",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "projectId",
+          "oirigin_field_type": "String",
+          "target_field": "app_id",
+          "target_field_type": "String",
+          "description": "projectId",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "projectId",
+          "oirigin_field_type": "String",
+          "target_field": "app_name",
+          "target_field_type": "String",
+          "description": "projectName",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "String",
+          "target_field": "cpu_core_count",
+          "target_field_type": "String",
+          "description": "cpu",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "String",
+          "target_field": "ram",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "String",
+          "target_field": "disk_space",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "region",
+          "oirigin_field_type": "String",
+          "target_field": "dcname",
+          "target_field_type": "String",
+          "description": "region",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "zone",
+          "oirigin_field_type": "String",
+          "target_field": "zone",
+          "target_field_type": "String",
+          "description": "zone",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "host_machine",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY",
+      "endpoint": "cmdb/api/v2/ci-query/search/2?page=1&size=20",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "uuid",
+          "target_field_type": "String",
+          "description": "instanceUuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "vmname",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}

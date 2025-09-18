@@ -1,0 +1,1422 @@
+[
+  {
+    "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "text": "windows-154-6",
+            "hidden": false,
+            "key": "hostname",
+            "value": "windows-154-6",
+            "label": "主机名"
+          },
+          {
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "value": "10.11.144.13",
+            "label": "宿主机"
+          },
+          {
+            "text": "Fit2cloud",
+            "hidden": false,
+            "key": "organizationName",
+            "value": "Fit2cloud",
+            "label": "组织"
+          },
+          {
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "applyUserName",
+            "value": "lijun.zhang",
+            "label": "申请人"
+          },
+          {
+            "text": "200",
+            "hidden": false,
+            "key": "disk",
+            "value": "200",
+            "label": "磁盘大小(GB)"
+          },
+          {
+            "text": "10.11.154.6",
+            "hidden": false,
+            "key": "managementIp",
+            "value": "10.11.154.6",
+            "label": "IP"
+          },
+          {
+            "text": "bjpvltcmpap08483",
+            "hidden": false,
+            "key": "instanceName",
+            "value": "bjpvltcmpap08483",
+            "label": "虚拟机名称"
+          },
+          {
+            "text": "Datacenter",
+            "hidden": false,
+            "key": "regionName",
+            "value": "Datacenter",
+            "label": "区域"
+          },
+          {
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "value": "test222",
+            "label": "备注"
+          },
+          {
+            "text": "Windows Server  64 位 2022",
+            "hidden": false,
+            "key": "osInfo",
+            "value": "Windows Server  64 位 2022",
+            "label": "操作系统"
+          },
+          {
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "value": "lijun.zhang",
+            "label": "归属人"
+          },
+          {
+            "text": "test",
+            "hidden": false,
+            "key": "workspaceName",
+            "value": "test",
+            "label": "工作空间"
+          },
+          {
+            "text": "bjpepits01",
+            "hidden": false,
+            "key": "zoneName",
+            "value": "bjpepits01",
+            "label": "可用区"
+          },
+          {
+            "text": "4核 8G",
+            "hidden": false,
+            "key": "instanceType",
+            "value": "4核 8G",
+            "label": "实例类型"
+          },
+          {
+            "text": "2025-07-06 11:40:29",
+            "hidden": false,
+            "key": "expiredTime",
+            "value": "2025-07-06 11:40:29",
+            "label": "到期时间"
+          },
+          {
+            "text": "2025-01-07 11:36:40",
+            "hidden": false,
+            "key": "createTime",
+            "value": "2025-01-07 11:36:40",
+            "label": "创建时间"
+          }
+        ]
+      }
+    ],
+    "description": "测试ITSM回收流程",
+    "processEventContext": {
+      "arguments": "SUBMIT",
+      "process": {
+        "processId": "952e5186-f261-4422-bea3-c19d9a32417d",
+        "processName": "i18n_vm_service_vm_recycle",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1736839913207,
+        "deployId": "0496402b-8b55-4a3f-9cb6-48b95b4f2254",
+        "businessKey": "vm-202501141531-24b056f1",
+        "businessType": "vm-service",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "module": "vm-service"
+      },
+      "tasks": [
+        {
+          "taskId": "5c15edd7-977c-42aa-9f2d-46f5c60204b9",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "itsm",
+          "taskStartTime": 1736840239446,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "952e5186-f261-4422-bea3-c19d9a32417d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501141531-24b056f1",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "8ddfbea7-52ee-4ee0-bdde-970df75f9800",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "jinli.zhang",
+          "taskStartTime": 1736840239447,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "952e5186-f261-4422-bea3-c19d9a32417d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501141531-24b056f1",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "a692d276-adb9-4de4-a99c-70c6dd9a892b",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "f2c.mdl",
+          "taskStartTime": 1736840239447,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "952e5186-f261-4422-bea3-c19d9a32417d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501141531-24b056f1",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "cd60dd7b-579d-4aef-8ad7-f1ef446c8b08",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "lijun.zhang",
+          "taskStartTime": 1736840239448,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "952e5186-f261-4422-bea3-c19d9a32417d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501141531-24b056f1",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        }
+      ]
+    },
+    "applicant": "lijun.zhang",
+    "resourceType": "VIRTUALMACHINE",
+    "orderType": "DELETE",
+    "module": "vm-service",
+    "businessKey": "vm-202501141531-24b056f1",
+    "processName": "i18n_vm_service_vm_recycle",
+    "createTime": "2025-01-14 15:31:53"
+  },
+  {
+    "bk_app_code": "bk_cmdb",
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_username": "lijun.zhang@carizon.work",
+    "service_id": 13,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fast_approval": false,
+    "fields": [
+      {
+        "type": "STRING",
+        "key": "title",
+        "value": "[DELETE]vm-202501141531-24b056f1",
+        "required": true
+      },
+      {
+        "type": "CUSTOMTABLE",
+        "value": [
+          {
+            "vmName": "bjpvltcmpap08483",
+            "vmIp": "10.11.154.6"
+          }
+        ],
+        "meta": {
+          "columns": [
+            {
+              "visible": true,
+              "required": false,
+              "name": "资源名称",
+              "key": "vmName",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "资源地址",
+              "key": "vmIp",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            }
+          ]
+        },
+        "required": false
+      }
+    ],
+    "meta": {}
+  },
+  {
+    "bk_app_code": "bk_cmdb",
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_username": "lijun.zhang@carizon.work",
+    "service_id": 30,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fast_approval": false,
+    "fields": [
+      {
+        "type": "STRING",
+        "key": "title",
+        "value": "[DELETE]vm-202501151617-562c1f40",
+        "required": true
+      },
+      {
+        "type": "CUSTOMTABLE",
+        "key": "PEIZHIXINXIBIAOGE",
+        "value": [
+          {
+            "JIQIMING1": "bjpvltcmpap08483",
+            "SUZHUJI": "10.11.144.13",
+            "CHUANGJIANSHIJIAN": "2025-01-07 11:36:40",
+            "SHILILEIXING1": "4核 8G",
+            "QUYU": "Datacenter",
+            "DAOQISHIJIAN": "2025-07-06 11:40:29",
+            "CAOZUOXITONG": "Windows Server  64 位 2022",
+            "IP1": "10.11.154.6",
+            "KEYONGQU": "bjpepits01",
+            "BEIZHU": "test222",
+            "JIQISHENQINGREN": "lijun.zhang",
+            "GUISHUREN": "lijun.zhang",
+            "GONGZUOKONGJIAN": "test",
+            "CIPANDAXIAO": "200",
+            "ZUZHI": "Fit2cloud"
+          }
+        ],
+        "meta": {
+          "columns": [
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器名",
+              "key": "JIQIMING1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "宿主机",
+              "key": "SUZHUJI",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "创建时间",
+              "key": "CHUANGJIANSHIJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "实例类型",
+              "key": "SHILILEIXING1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "区域",
+              "key": "QUYU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "到期时间",
+              "key": "DAOQISHIJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "操作系统",
+              "key": "CAOZUOXITONG",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "IP",
+              "key": "IP1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "可用区",
+              "key": "KEYONGQU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器备注",
+              "key": "BEIZHU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器申请人",
+              "key": "JIQISHENQINGREN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器归属人",
+              "key": "GUISHUREN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "工作空间",
+              "key": "GONGZUOKONGJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "磁盘大小",
+              "key": "CIPANDAXIAO",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "组织",
+              "key": "ZUZHI",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            }
+          ]
+        },
+        "required": false
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGYUANYIN",
+        "value": "itsm test",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGREN",
+        "value": "lijun.zhang",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "CHUANGJIANSHIJIAN",
+        "value": "2025-01-15 16:17:56",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "DINGDANBIANHAO",
+        "value": "vm-202501151617-562c1f40",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "ZUZHIGUANLIYUAN",
+        "value": "6byrlpv@carizon.work,binbin.sun@carizon.work,chaochao.zhang@carizon.work,f2c.mdl@carizon.work,jingze.li@carizon.work,jinli.zhang@carizon.work,jinliang.qi@carizon.work,lijun.zhang@carizon.work,sunbinbin-test@carizon.work,vd70hj3@carizon.work,weiguang.cao@carizon.work",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "XITONGGUANLIYUAN",
+        "value": "itsm@carizon.work,6byrlpv@carizon.work,chaochao.zhang@carizon.work,tao.liu@carizon.work,extern.jinqi.hao@carizon.work,jingze.li@carizon.work,jinliang.qi@carizon.work,it-test@carizon.work,feng.tian@carizon.work,test.20240517@carizon.work,naixu.zhu@carizon.work,weiguang.cao@carizon.work,jumpserver-login@carizon.work,f2c.mdl@carizon.work,jinli.zhang@carizon.work,lijun.zhang@carizon.work,sunbinbin-f2c@carizon.work,binbin.sun@carizon.work,jms-admin@carizon.work,vd70hj3@carizon.work,jormun@carizon.work,admin@carizon.work",
+        "required": true
+      }
+    ],
+    "meta": {}
+  },
+  {
+    "bk_app_code": "bk_cmdb",
+    "bk_app_secret": "e4a0f6e3-5f7b-4438-92bf-b3efaf1c5e25",
+    "bk_username": "lijun.zhang@carizon.work",
+    "service_id": 30,
+    "service_type": "request",
+    "creator": "lijun.zhang@carizon.work",
+    "fast_approval": false,
+    "fields": [
+      {
+        "type": "STRING",
+        "key": "title",
+        "value": "[DELETE]vm-202501211151-885924eb",
+        "required": true
+      },
+      {
+        "type": "CUSTOMTABLE",
+        "key": "PEIZHIXINXIBIAOGE",
+        "value": [
+          {
+            "JIQIMING1": "bjpvltcmpap08493",
+            "SUZHUJI": "10.11.144.15",
+            "CHUANGJIANSHIJIAN": "2025-01-20 17:24:41",
+            "SHILILEIXING1": "4核 8G",
+            "QUYU": "Datacenter",
+            "DAOQISHIJIAN": "2025-07-19 17:28:41",
+            "CAOZUOXITONG": "Windows Server  64 位 2022",
+            "IP1": "10.11.154.7",
+            "KEYONGQU": "bjpepits01",
+            "BEIZHU": "test222",
+            "JIQISHENQINGREN": "lijun.zhang",
+            "GUISHUREN": "lijun.zhang",
+            "GONGZUOKONGJIAN": "test",
+            "CIPANDAXIAO": "200",
+            "ZUZHI": "Fit2cloud"
+          },
+          {
+            "JIQIMING1": "bjpvltcmpap08494",
+            "SUZHUJI": "10.11.144.13",
+            "CHUANGJIANSHIJIAN": "2025-01-20 20:31:03",
+            "SHILILEIXING1": "4核 8G",
+            "QUYU": "Datacenter",
+            "DAOQISHIJIAN": "2025-07-19 20:34:45",
+            "CAOZUOXITONG": "Windows Server  64 位 2022",
+            "IP1": "10.11.154.8",
+            "KEYONGQU": "bjpepits01",
+            "BEIZHU": "test222",
+            "JIQISHENQINGREN": "lijun.zhang",
+            "GUISHUREN": "lijun.zhang",
+            "GONGZUOKONGJIAN": "test",
+            "CIPANDAXIAO": "200",
+            "ZUZHI": "Fit2cloud"
+          }
+        ],
+        "meta": {
+          "columns": [
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器名",
+              "key": "JIQIMING1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "宿主机",
+              "key": "SUZHUJI",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "创建时间",
+              "key": "CHUANGJIANSHIJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "实例类型",
+              "key": "SHILILEIXING1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "区域",
+              "key": "QUYU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "到期时间",
+              "key": "DAOQISHIJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "操作>系统",
+              "key": "CAOZUOXITONG",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "IP",
+              "key": "IP1",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "可用区",
+              "key": "KEYONGQU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器备注",
+              "key": "BEIZHU",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器申请人",
+              "key": "JIQISHENQINGREN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "机器归属人",
+              "key": "GUISHUREN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "工作空间",
+              "key": "GONGZUOKONGJIAN",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "磁盘大小",
+              "key": "CIPANDAXIAO",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            },
+            {
+              "visible": true,
+              "required": false,
+              "name": "组织",
+              "key": "ZUZHI",
+              "display": "input",
+              "is_tips": false,
+              "is_readonly": false,
+              "is_text": false,
+              "max_line": 6,
+              "source_type": "CUSTOM",
+              "choice": [],
+              "firstOption": false
+            }
+          ]
+        },
+        "required": false
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGYUANYIN",
+        "value": "test",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "SHENQINGREN",
+        "value": "lijun.zhang",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "CHUANGJIANSHIJIAN",
+        "value": "2025-01-21 11:51:00",
+        "required": true
+      },
+      {
+        "type": "STRING",
+        "key": "DINGDANBIANHAO",
+        "value": "vm-202501211151-885924eb",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "ZUZHIGUANLIYUAN",
+        "value": "6byrlpv@carizon.work,binbin.sun@carizon.work,chaochao.zhang@carizon.work,f2c.mdl@carizon.work,jingze.li@carizon.work,jinli.zhang@carizon.work,jinliang.qi@carizon.work,lijun.zhang@carizon.work,sunbinbin-test@carizon.work,vd70hj3@carizon.work,weiguang.cao@carizon.work",
+        "required": true
+      },
+      {
+        "type": "MEMBERS",
+        "key": "XITONGGUANLIYUAN",
+        "value": "itsm@carizon.work,6byrlpv@carizon.work,chaochao.zhang@carizon.work,tao.liu@carizon.work,extern.jinqi.hao@carizon.work,jingze.li@carizon.work,jinliang.qi@carizon.work,it-test@carizon.work,feng.tian@carizon.work,test.20240517@carizon.work,naixu.zhu@carizon.work,weiguang.cao@carizon.work,jumpserver-login@carizon.work,f2c.mdl@carizon.work,jinli.zhang@carizon.work,lijun.zhang@carizon.work,sunbinbin-f2c@carizon.work,binbin.sun@carizon.work,jms-admin@carizon.work,vd70hj3@carizon.work,jormun@carizon.work,admin@carizon.work",
+        "required": true
+      }
+    ],
+    "meta": {}
+  },
+  {
+    "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+    "orderType": "DELETE",
+    "businessKey": "vm-202501211151-885924eb",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "label": "主机名",
+            "hidden": false,
+            "text": "windows-154-7",
+            "key": "hostname",
+            "value": "windows-154-7"
+          },
+          {
+            "label": "宿主机",
+            "hidden": false,
+            "text": "10.11.144.15",
+            "key": "host",
+            "value": "10.11.144.15"
+          },
+          {
+            "label": "组织",
+            "hidden": false,
+            "text": "Fit2cloud",
+            "key": "organizationName",
+            "value": "Fit2cloud"
+          },
+          {
+            "label": "申请人",
+            "hidden": false,
+            "text": "lijun.zhang",
+            "key": "applyUserName",
+            "value": "lijun.zhang"
+          },
+          {
+            "label": "磁盘大小(GB)",
+            "hidden": false,
+            "text": "200",
+            "key": "disk",
+            "value": "200"
+          },
+          {
+            "label": "IP",
+            "hidden": false,
+            "text": "10.11.154.7",
+            "key": "managementIp",
+            "value": "10.11.154.7"
+          },
+          {
+            "label": "虚拟机名称",
+            "hidden": false,
+            "text": "bjpvltcmpap08493",
+            "key": "instanceName",
+            "value": "bjpvltcmpap08493"
+          },
+          {
+            "label": "区域",
+            "hidden": false,
+            "text": "Datacenter",
+            "key": "regionName",
+            "value": "Datacenter"
+          },
+          {
+            "label": "备注",
+            "hidden": false,
+            "text": "test222",
+            "key": "remark",
+            "value": "test222"
+          },
+          {
+            "label": "操作系统",
+            "hidden": false,
+            "text": "Windows Server  64 位 2022",
+            "key": "osInfo",
+            "value": "Windows Server  64 位 2022"
+          },
+          {
+            "label": "归属人",
+            "hidden": false,
+            "text": "lijun.zhang",
+            "key": "ownerName",
+            "value": "lijun.zhang"
+          },
+          {
+            "label": "工作空间",
+            "hidden": false,
+            "text": "test",
+            "key": "workspaceName",
+            "value": "test"
+          },
+          {
+            "label": "可用区",
+            "hidden": false,
+            "text": "bjpepits01",
+            "key": "zoneName",
+            "value": "bjpepits01"
+          },
+          {
+            "label": "实例类型",
+            "hidden": false,
+            "text": "4核 8G",
+            "key": "instanceType",
+            "value": "4核 8G"
+          },
+          {
+            "label": "到期时间",
+            "hidden": false,
+            "text": "2025-07-19 17:28:41",
+            "key": "expiredTime",
+            "value": "2025-07-19 17:28:41"
+          },
+          {
+            "label": "创建时间",
+            "hidden": false,
+            "text": "2025-01-20 17:24:41",
+            "key": "createTime",
+            "value": "2025-01-20 17:24:41"
+          }
+        ]
+      },
+      {
+        "detailItems": [
+          {
+            "label": "主机名",
+            "hidden": false,
+            "text": "windows-154-8",
+            "key": "hostname",
+            "value": "windows-154-8"
+          },
+          {
+            "label": "宿主机",
+            "hidden": false,
+            "text": "10.11.144.13",
+            "key": "host",
+            "value": "10.11.144.13"
+          },
+          {
+            "label": "组织",
+            "hidden": false,
+            "text": "Fit2cloud",
+            "key": "organizationName",
+            "value": "Fit2cloud"
+          },
+          {
+            "label": "申请人",
+            "hidden": false,
+            "text": "lijun.zhang",
+            "key": "applyUserName",
+            "value": "lijun.zhang"
+          },
+          {
+            "label": "磁盘大小(GB)",
+            "hidden": false,
+            "text": "200",
+            "key": "disk",
+            "value": "200"
+          },
+          {
+            "label": "IP",
+            "hidden": false,
+            "text": "10.11.154.8",
+            "key": "managementIp",
+            "value": "10.11.154.8"
+          },
+          {
+            "label": "虚拟机名称",
+            "hidden": false,
+            "text": "bjpvltcmpap08494",
+            "key": "instanceName",
+            "value": "bjpvltcmpap08494"
+          },
+          {
+            "label": "区域",
+            "hidden": false,
+            "text": "Datacenter",
+            "key": "regionName",
+            "value": "Datacenter"
+          },
+          {
+            "label": "备注",
+            "hidden": false,
+            "text": "test222",
+            "key": "remark",
+            "value": "test222"
+          },
+          {
+            "label": "操作系统",
+            "hidden": false,
+            "text": "Windows Server  64 位 2022",
+            "key": "osInfo",
+            "value": "Windows Server  64 位 2022"
+          },
+          {
+            "label": "归属人",
+            "hidden": false,
+            "text": "lijun.zhang",
+            "key": "ownerName",
+            "value": "lijun.zhang"
+          },
+          {
+            "label": "工作空间",
+            "hidden": false,
+            "text": "test",
+            "key": "workspaceName",
+            "value": "test"
+          },
+          {
+            "label": "可用区",
+            "hidden": false,
+            "text": "bjpepits01",
+            "key": "zoneName",
+            "value": "bjpepits01"
+          },
+          {
+            "label": "实例类型",
+            "hidden": false,
+            "text": "4核 8G",
+            "key": "instanceType",
+            "value": "4核 8G"
+          },
+          {
+            "label": "到期时间",
+            "hidden": false,
+            "text": "2025-07-19 20:34:45",
+            "key": "expiredTime",
+            "value": "2025-07-19 20:34:45"
+          },
+          {
+            "label": "创建时间",
+            "hidden": false,
+            "text": "2025-01-20 20:31:03",
+            "key": "createTime",
+            "value": "2025-01-20 20:31:03"
+          }
+        ]
+      }
+    ],
+    "createTime": "2025-01-21 11:51:00",
+    "description": "test",
+    "applicant": "lijun.zhang",
+    "resourceType": "VIRTUALMACHINE",
+    "processName": "i18n_vm_service_vm_recycle",
+    "processEventContext": {
+      "tasks": [
+        {
+          "taskId": "7dfeb0be-8815-4981-a4b5-5003c6ae494d",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "itsm",
+          "taskStartTime": 1737431510932,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "5e45b170-e465-409a-9a1b-f19d6037546d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211151-885924eb",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "7621e520-c4ca-4d96-9f36-797b1bdd0690",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "jinli.zhang",
+          "taskStartTime": 1737431510933,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "5e45b170-e465-409a-9a1b-f19d6037546d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211151-885924eb",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "2a097a5f-feac-4d62-aefa-13157a5ab859",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "f2c.mdl",
+          "taskStartTime": 1737431510934,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "5e45b170-e465-409a-9a1b-f19d6037546d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211151-885924eb",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "bf16742d-89f5-45b8-9441-c1f5414dabd3",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "lijun.zhang",
+          "taskStartTime": 1737431510934,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "5e45b170-e465-409a-9a1b-f19d6037546d",
+          "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211151-885924eb",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        }
+      ],
+      "arguments": "SUBMIT",
+      "process": {
+        "processId": "5e45b170-e465-409a-9a1b-f19d6037546d",
+        "processName": "i18n_vm_service_vm_recycle",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1737431460861,
+        "deployId": "b9e65420-8b9a-4652-a2a5-1746c3260915",
+        "businessKey": "vm-202501211151-885924eb",
+        "businessType": "vm-service",
+        "workspaceId": "f0f42898-cce3-4303-bb3a-ea287c7291dd",
+        "module": "vm-service"
+      }
+    },
+    "module": "vm-service"
+  },
+  {
+    "resourceType": "VIRTUALMACHINE",
+    "workspaceId": "root",
+    "applicant": "lijun.zhang",
+    "businessKey": "vm-202501211346-934f5618",
+    "orderType": "DELETE",
+    "processName": "i18n_vm_service_vm_recycle",
+    "processEventContext": {
+      "process": {
+        "processId": "f3423cf0-1927-49a7-b268-78b1c7577b73",
+        "processName": "i18n_vm_service_vm_recycle",
+        "processStatus": "PENDING",
+        "processCreator": "lijun.zhang",
+        "processStartTime": 1737438366246,
+        "deployId": "b9e65420-8b9a-4652-a2a5-1746c3260915",
+        "businessKey": "vm-202501211346-934f5618",
+        "businessType": "vm-service",
+        "workspaceId": "admin",
+        "module": "vm-service"
+      },
+      "arguments": "SUBMIT",
+      "tasks": [
+        {
+          "taskId": "96702d69-7c6d-46d5-af16-ebb7d17b373a",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "itsm",
+          "taskStartTime": 1737438537266,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "f3423cf0-1927-49a7-b268-78b1c7577b73",
+          "workspaceId": "admin",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211346-934f5618",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "e147a109-647d-4c5c-9953-7409c6bfc8b5",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "jinli.zhang",
+          "taskStartTime": 1737438537267,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "f3423cf0-1927-49a7-b268-78b1c7577b73",
+          "workspaceId": "admin",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211346-934f5618",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "95b43f2f-cac8-4845-b7c2-7629cc2bac9c",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "f2c.mdl",
+          "taskStartTime": 1737438537268,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "f3423cf0-1927-49a7-b268-78b1c7577b73",
+          "workspaceId": "admin",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211346-934f5618",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        },
+        {
+          "taskId": "878c7c1a-a09f-42d9-80f1-14ba41423520",
+          "taskStep": 3,
+          "taskName": "ITSM专用审批环节",
+          "taskStatus": "PENDING",
+          "taskAssignee": "lijun.zhang",
+          "taskStartTime": 1737438537268,
+          "taskActivity": "6b05f4ba-0ad8-42ff-8e0e-88090032c74a",
+          "processId": "f3423cf0-1927-49a7-b268-78b1c7577b73",
+          "workspaceId": "admin",
+          "businessType": "vm-service",
+          "businessKey": "vm-202501211346-934f5618",
+          "module": "vm-service",
+          "linkBusinessType": "APPROVE",
+          "isRead": false,
+          "taskChildStep": 3
+        }
+      ]
+    },
+    "createTime": "2025-01-21 13:46:06",
+    "description": "test",
+    "module": "vm-service",
+    "businessDetails": [
+      {
+        "detailItems": [
+          {
+            "value": "windows-154-8",
+            "text": "windows-154-8",
+            "hidden": false,
+            "key": "hostname",
+            "label": "主机名"
+          },
+          {
+            "value": "10.11.144.13",
+            "text": "10.11.144.13",
+            "hidden": false,
+            "key": "host",
+            "label": "宿主机"
+          },
+          {
+            "value": "Fit2cloud",
+            "text": "Fit2cloud",
+            "hidden": false,
+            "key": "organizationName",
+            "label": "组织"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "applyUserName",
+            "label": "申请人"
+          },
+          {
+            "value": "200",
+            "text": "200",
+            "hidden": false,
+            "key": "disk",
+            "label": "磁盘大小(GB)"
+          },
+          {
+            "value": "10.11.154.8",
+            "text": "10.11.154.8",
+            "hidden": false,
+            "key": "managementIp",
+            "label": "IP"
+          },
+          {
+            "value": "bjpvltcmpap08494",
+            "text": "bjpvltcmpap08494",
+            "hidden": false,
+            "key": "instanceName",
+            "label": "虚拟机名称"
+          },
+          {
+            "value": "Datacenter",
+            "text": "Datacenter",
+            "hidden": false,
+            "key": "regionName",
+            "label": "区域"
+          },
+          {
+            "value": "test222",
+            "text": "test222",
+            "hidden": false,
+            "key": "remark",
+            "label": "备注"
+          },
+          {
+            "value": "Windows Server  64 位 2022",
+            "text": "Windows Server  64 位 2022",
+            "hidden": false,
+            "key": "osInfo",
+            "label": "操作系统"
+          },
+          {
+            "value": "lijun.zhang",
+            "text": "lijun.zhang",
+            "hidden": false,
+            "key": "ownerName",
+            "label": "归属人"
+          },
+          {
+            "value": "test",
+            "text": "test",
+            "hidden": false,
+            "key": "workspaceName",
+            "label": "工作空间"
+          },
+          {
+            "value": "bjpepits01",
+            "text": "bjpepits01",
+            "hidden": false,
+            "key": "zoneName",
+            "label": "可用区"
+          },
+          {
+            "value": "4核 8G",
+            "text": "4核 8G",
+            "hidden": false,
+            "key": "instanceType",
+            "label": "实例类型"
+          },
+          {
+            "value": "2025-07-19 20:34:45",
+            "text": "2025-07-19 20:34:45",
+            "hidden": false,
+            "key": "expiredTime",
+            "label": "到期时间"
+          },
+          {
+            "value": "2025-01-20 20:31:03",
+            "text": "2025-01-20 20:31:03",
+            "hidden": false,
+            "key": "createTime",
+            "label": "创建时间"
+          }
+        ]
+      }
+    ]
+  }
+]
+

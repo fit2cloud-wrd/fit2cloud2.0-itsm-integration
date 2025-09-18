@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fit2cloud.itsm.dao.ExtPciApiAccountMapper">
+  <resultMap id="BaseResultMap" type="com.fit2cloud.itsm.model.dto.PciApiAccountDTO">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="system_type" jdbcType="VARCHAR" property="systemType" />
+    <result column="provider_factory_id" jdbcType="VARCHAR" property="providerFactoryId" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="sync_status" jdbcType="VARCHAR" property="syncStatus" />
+    <result column="auto_sync" jdbcType="BIT" property="autoSync" />
+    <result column="msg" jdbcType="VARCHAR" property="msg" />
+    <result column="api_endpoint" jdbcType="VARCHAR" property="apiEndpoint" />
+    <result column="test_api_endpoint" jdbcType="VARCHAR" property="testApiEndpoint" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="apiEndpointCount" jdbcType="INTEGER" property="apiEndpointCount" />
+    <result column="enable_flag" jdbcType="INTEGER" property="enableFlag" />
+  </resultMap>
+  <resultMap id="EndPointResultMap" type="com.fit2cloud.itsm.model.PciApiEndpoint">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="api_type" jdbcType="VARCHAR" property="apiType" />
+    <result column="api_account" jdbcType="VARCHAR" property="apiAccount" />
+    <result column="endpoint" jdbcType="VARCHAR" property="endpoint" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="request_template" jdbcType="VARCHAR" property="requestTemplate" />
+    <result column="custom_content" jdbcType="VARCHAR" property="customContent" />
+  </resultMap>
+  <resultMap id="EndPointDtoResultMap" type="com.fit2cloud.itsm.model.dto.PciApiEndpointDTO">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="api_type" jdbcType="VARCHAR" property="apiType" />
+    <result column="api_account" jdbcType="VARCHAR" property="apiAccount" />
+    <result column="endpoint" jdbcType="VARCHAR" property="endpoint" />
+    <result column="api_endpoint" jdbcType="VARCHAR" property="apiEndpoint" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="accountName" jdbcType="VARCHAR" property="accountName" />
+    <result column="system_type" jdbcType="VARCHAR" property="systemType" />
+    <result column="parameterMappingCount" jdbcType="INTEGER" property="parameterMappingCount" />
+  </resultMap>
+  <resultMap id="ParamaterMappingResultMap" type="com.fit2cloud.itsm.model.dto.PciApiParameterMappingDTO">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="api_id" jdbcType="VARCHAR" property="apiId" />
+    <result column="origin_field" jdbcType="VARCHAR" property="originField" />
+    <result column="origin_field_type" jdbcType="VARCHAR" property="originFieldType" />
+    <result column="target_field" jdbcType="VARCHAR" property="targetField" />
+    <result column="target_field_type" jdbcType="VARCHAR" property="targetFieldType" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+    <result column="origin_field_source" jdbcType="VARCHAR" property="originFieldSource" />
+    <result column="origin_field_table" jdbcType="VARCHAR" property="originFieldTable" />
+    <result column="origin_field_name" jdbcType="VARCHAR" property="originFieldName" />
+    <result column="endpoint" jdbcType="VARCHAR" property="endpoint" />
+    <result column="api_type" jdbcType="VARCHAR" property="apiType" />
+    <result column="provider_factory_id" jdbcType="VARCHAR" property="providerFactoryId" />
+    <result column="field_tag" jdbcType="VARCHAR" property="fieldTag" />
+
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.fit2cloud.itsm.model.PciApiAccount">
+    <result column="credential" jdbcType="LONGVARCHAR" property="credential" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, system_type, provider_factory_id, status, sync_status, auto_sync, msg, api_endpoint, test_api_endpoint,
+    version, enable_flag
+  </sql>
+  <sql id="Blob_Column_List">
+    credential
+  </sql>
+
+  <select id="getApiAccountList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />,
+    <include refid="Blob_Column_List" />,
+    (select count(1) from pci_api_endpoint endpoint  WHERE endpoint.api_account=pci_api_account.id) as apiEndpointCount
+    from pci_api_account
+    <where>
+      <if test="record.name != null">
+        AND name = #{record.name,jdbcType=VARCHAR}
+      </if>
+      <if test="record.systemType != null">
+        AND system_type = #{record.systemType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.providerFactoryId != null">
+        AND provider_factory_id = #{record.providerFactoryId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.status != null">
+        AND status = #{record.status,jdbcType=VARCHAR}
+      </if>
+      <if test="record.apiEndpoint != null">
+        AND api_endpoint = #{record.apiEndpoint,jdbcType=VARCHAR}
+      </if>
+      <if test="record.testApiEndpoint != null">
+        AND test_api_endpoint = #{record.testApiEndpoint,jdbcType=VARCHAR}
+      </if>
+      <if test="record.version != null">
+        AND version = #{record.version,jdbcType=VARCHAR}
+      </if>
+      <if test="record.enableFlag != null">
+        AND enable_flag = #{record.enableFlag,jdbcType=VARCHAR}
+      </if>
+      <if test="record.syncStatus != null">
+        AND sync_status = #{record.syncStatus,jdbcType=VARCHAR}
+      </if>
+      <if test="record.autoSync != null">
+        AND auto_sync = #{record.autoSync,jdbcType=BIT}
+      </if>
+    </where>
+  </select>
+
+  <select id="getApiEndpointList" resultMap="EndPointDtoResultMap">
+    select pae.id, pae.api_type, pae.api_account, pae.endpoint, pae.method, pae.update_time,
+           paa.name as accountName, paa.api_endpoint, paa.system_type, pae.request_template  as requestTemplate,paa.provider_factory_id as providerFactoryId,
+           pae.custom_content as customContent,
+           (select count(1) from pci_api_parameter_mapping mapping  WHERE mapping.api_id=pae.id) as parameterMappingCount
+    from pci_api_endpoint pae inner join pci_api_account paa
+    on pae.api_account = paa.id
+    <where>
+      <if test="record.id != null">
+        AND pae.id = #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.systemType != null">
+        AND paa.system_type = #{record.systemType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.apiType != null">
+        AND pae.api_type = #{record.apiType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.apiAccount != null">
+        AND pae.api_account = #{record.apiAccount,jdbcType=VARCHAR}
+      </if>
+      <if test="record.endpoint != null">
+        AND pae.endpoint like #{record.endpoint,jdbcType=VARCHAR}
+      </if>
+      <if test="record.method != null">
+        AND pae.method = #{record.method,jdbcType=VARCHAR}
+      </if>
+      <if test="record.updateTime != null">
+        AND pae.update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+      </if>
+    </where>
+  </select>
+
+  <select id="getApiParameterMapppingList" resultMap="ParamaterMappingResultMap">
+    select mapping.id, mapping.api_id, mapping.origin_field,mapping.origin_field_name, mapping.origin_field_type, mapping.target_field, mapping.target_field_type,
+    mapping.update_time,mapping.description,mapping.origin_field_source,mapping.origin_field_table,mapping.field_tag,endpoint.endpoint,endpoint.api_type,account.provider_factory_id
+    from pci_api_parameter_mapping as mapping
+    left join pci_api_endpoint as endpoint on mapping.api_id=endpoint.id
+    left join pci_api_account as account on endpoint.api_account=account.id
+    <where>
+      <if test="record.id != null">
+        AND mapping.id = #{record.id,jdbcType=VARCHAR}
+      </if>
+      <if test="record.apiId != null">
+        AND mapping.api_id = #{record.apiId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.originField != null">
+        AND (mapping.origin_field like #{record.originField,jdbcType=VARCHAR}
+            or mapping.origin_field_name like #{record.originField,jdbcType=VARCHAR})
+      </if>
+      <if test="record.originFieldType != null">
+        AND mapping.origin_field_type = #{record.originFieldType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.targetField != null">
+        AND mapping.target_field like #{record.targetField,jdbcType=VARCHAR}
+      </if>
+      <if test="record.targetFieldType != null">
+        AND mapping.target_field_type = #{record.targetFieldType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.description != null">
+        AND mapping.description like #{description,jdbcType=LONGVARCHAR}
+      </if>
+      <if test="record.originFieldSource != null">
+        AND mapping.origin_field_source = #{originFieldSource,jdbcType=LONGVARCHAR}
+      </if>
+      <if test="record.originFieldTable != null">
+        AND mapping.origin_field_table = #{originFieldTable,jdbcType=LONGVARCHAR}
+      </if>
+      <if test="record.fieldTag != null">
+        AND mapping.field_tag like  #{record.fieldTag,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+
+  <select id="getApiAccountAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from pci_api_account
+    <where>
+      <if test="record.name != null">
+        AND name = #{record.name,jdbcType=VARCHAR}
+      </if>
+      <if test="record.systemType != null">
+        AND system_type = #{record.systemType,jdbcType=VARCHAR}
+      </if>
+      <if test="record.providerFactoryId != null">
+        AND provider_factory_id = #{record.providerFactoryId,jdbcType=VARCHAR}
+      </if>
+      <if test="record.status != null">
+        AND status = #{record.status,jdbcType=VARCHAR}
+      </if>
+      <if test="record.apiEndpoint != null">
+        AND api_endpoint = #{record.apiEndpoint,jdbcType=VARCHAR}
+      </if>
+      <if test="record.testApiEndpoint != null">
+        AND test_api_endpoint = #{record.testApiEndpoint,jdbcType=VARCHAR}
+      </if>
+      <if test="record.version != null">
+        AND version = #{record.version,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+
+  <select id="getApiEndPointListByApiAccountId" resultMap="EndPointResultMap">
+    select id, api_type, api_account, endpoint, method, update_time, request_template, custom_content
+    from pci_api_endpoint
+    WHERE api_account = #{accountId};
+  </select>
+
+  <select id="getApiParamaterMappingByApiId" resultMap="ParamaterMappingResultMap">
+    select id, api_id, origin_field, origin_field_type, target_field, target_field_type, update_time,description,
+           origin_field_source, origin_field_table, field_tag, origin_field_name
+    from pci_api_parameter_mapping
+    WHERE api_id = #{apiId};
+  </select>
+
+  <delete id="deleteApiParamaterMappingByApiId">
+    delete from pci_api_parameter_mapping
+    where api_id = #{apiId}
+  </delete>
+
+  <select id="selectPublicItemList" parameterType="String" resultType="java.util.HashMap">
+    ${sqlStr}
+  </select>
+
+</mapper>

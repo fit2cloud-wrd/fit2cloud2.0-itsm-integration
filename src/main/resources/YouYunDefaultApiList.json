@@ -1,0 +1,338 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "/store/openapi/v2/resources/save",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "VM",
+          "oirigin_field_type": "常量",
+          "target_field": "classCode",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "uuid",
+          "target_field_type": "String",
+          "description": "uuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "cpu_core_num",
+          "target_field_type": "String",
+          "description": "cpu_core_num",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineCpuInformation",
+          "target_field_type": "String",
+          "description": "cpu",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineMemorySize",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineHarddiskSize",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "belongHost",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "ips",
+          "target_field_type": "StringList",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "managementIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "hypervisor_ip",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "appUser",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "name",
+          "oirigin_field_type": "String",
+          "target_field": "systemName",
+          "target_field_type": "String",
+          "description": "workspace",
+          "origin_field_source": "table",
+          "origin_field_table": "workspace",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "[\"fit2cloud\"]",
+          "oirigin_field_type": "常量",
+          "target_field": "sources",
+          "target_field_type": "StringList",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "/store/openapi/v2/resources/save",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "VM",
+          "oirigin_field_type": "常量",
+          "target_field": "classCode",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "uuid",
+          "target_field_type": "String",
+          "description": "uuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "cpu_core_num",
+          "target_field_type": "String",
+          "description": "cpu_core_num",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineCpuInformation",
+          "target_field_type": "String",
+          "description": "cpu",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineMemorySize",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "virtualMachineHarddiskSize",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "belongHost",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "ips",
+          "target_field_type": "StringList",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "ip",
+          "target_field_type": "String",
+          "description": "managementIp",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "hypervisor_ip",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "appUser",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "name",
+          "oirigin_field_type": "String",
+          "target_field": "systemName",
+          "target_field_type": "String",
+          "description": "workspace",
+          "origin_field_source": "table",
+          "origin_field_table": "workspace",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "[\"fit2cloud\"]",
+          "oirigin_field_type": "常量",
+          "target_field": "sources",
+          "target_field_type": "StringList",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY",
+      "endpoint": "/store/openapi/v2/resources/query",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "VM",
+          "oirigin_field_type": "常量",
+          "target_field": "classCode",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "ips",
+          "target_field_type": "StringList",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}

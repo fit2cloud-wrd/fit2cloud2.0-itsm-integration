@@ -1,0 +1,731 @@
+{
+  "catalog_id": "3",
+  "service_id": "29",
+  "service_type": "change",
+  "creator": "lijun.zhang@carizon.work",
+  "fields": [
+    {
+      "type": "STRING",
+      "id": 2777,
+      "key": "title",
+      "meta": {},
+      "value": "zljtest-0112",
+      "choice": []
+    },
+    {
+      "type": "CUSTOMTABLE",
+      "id": 2785,
+      "key": "PEIZHIXINXIBIAOGE",
+      "meta": {
+        "is_clear": true,
+        "columns": [
+          {
+            "visible": true,
+            "required": false,
+            "name": "云平台",
+            "key": "YUNPINGTAI",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "数量",
+            "key": "SHULIANG1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "机器名",
+            "key": "JIQIMING1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "IP",
+            "key": "IP1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "操作系统版本",
+            "key": "CAOZUOXITONGBANBEN1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "实例类型",
+            "key": "SHILILEIXING1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "系统盘大小(GB)",
+            "key": "XITONGPANDAXIAO(GB)1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "数据盘大小(GB)",
+            "key": "SHUJUPANDAXIAO(GB)1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "数据盘挂载点",
+            "key": "SHUJUPANGUAZAIDIAN1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "磁盘格式",
+            "key": "CIPANGESHI1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "租期",
+            "key": "ZUQI1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "回收策略",
+            "key": "HUISHOUCELVE1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "是否加入域",
+            "key": "SHIFOUJIARUYU1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "hostname与机器名是否一致",
+            "key": "HOSTNAMEYUJIQIMINGSHIFOUYIZHI",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "是否安装监控代理",
+            "key": "SHIFOUANZHUANGJIANKONGDAILI1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "是否自动生成密码",
+            "key": "SHIFOUZIDONGSHENGCHENGMIMA",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "归属人",
+            "key": "GUISHUREN1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "项目",
+            "key": "XIANGMU1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "软件",
+            "key": "RUANJIAN1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "Data Center",
+            "key": "DATA_CENTER1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "Function",
+            "key": "FUNCTION1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "Environments",
+            "key": "ENVIRONMENTS1",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          },
+          {
+            "visible": true,
+            "required": false,
+            "name": "操作系统是否由IT进行维护",
+            "key": "1CAOZUOXITONGSHIFOUYOUITJINHANGWE",
+            "display": "input",
+            "default_value": "",
+            "customRegex": "",
+            "desc": "",
+            "is_tips": false,
+            "tips": "",
+            "is_readonly": false,
+            "is_text": false,
+            "max_line": 6,
+            "source_type": "CUSTOM",
+            "choice": [
+              {
+                "name": "",
+                "key": "",
+                "required": false
+              }
+            ],
+            "firstOption": false
+          }
+        ],
+        "predefined_value": [],
+        "table_style": "alone",
+        "is_automatically_index": true
+      },
+      "value": [
+        {
+          "YUNPINGTAI": "1",
+          "SHULIANG1": "2",
+          "JIQIMING1": "3",
+          "IP1": "4",
+          "CAOZUOXITONGBANBEN1": "5",
+          "SHILILEIXING1": "6",
+          "XITONGPANDAXIAO(GB)1": "7",
+          "SHUJUPANDAXIAO(GB)1": "8",
+          "SHUJUPANGUAZAIDIAN1": "9",
+          "CIPANGESHI1": "10",
+          "ZUQI1": "11",
+          "HUISHOUCELVE1": "12",
+          "SHIFOUJIARUYU1": "13",
+          "HOSTNAMEYUJIQIMINGSHIFOUYIZHI": "14",
+          "SHIFOUANZHUANGJIANKONGDAILI1": "15",
+          "SHIFOUZIDONGSHENGCHENGMIMA": "16",
+          "GUISHUREN1": "17",
+          "XIANGMU1": "18",
+          "RUANJIAN1": "19",
+          "DATA_CENTER1": "20",
+          "FUNCTION1": "21",
+          "ENVIRONMENTS1": "22",
+          "1CAOZUOXITONGSHIFOUYOUITJINHANGWE": "23"
+        },
+        {
+          "YUNPINGTAI": "1a",
+          "SHULIANG1": "2a",
+          "JIQIMING1": "3a",
+          "IP1": "4a",
+          "CAOZUOXITONGBANBEN1": "5a",
+          "SHILILEIXING1": "6a",
+          "XITONGPANDAXIAO(GB)1": "7a",
+          "SHUJUPANDAXIAO(GB)1": "8a",
+          "SHUJUPANGUAZAIDIAN1": "9a",
+          "CIPANGESHI1": "10a",
+          "ZUQI1": "11a",
+          "HUISHOUCELVE1": "12a",
+          "SHIFOUJIARUYU1": "13a",
+          "HOSTNAMEYUJIQIMINGSHIFOUYIZHI": "14a",
+          "SHIFOUANZHUANGJIANKONGDAILI1": "15a",
+          "SHIFOUZIDONGSHENGCHENGMIMA": "16a",
+          "GUISHUREN1": "17a",
+          "XIANGMU1": "18a",
+          "RUANJIAN1": "19a",
+          "DATA_CENTER1": "20a",
+          "FUNCTION1": "21a",
+          "ENVIRONMENTS1": "22a",
+          "1CAOZUOXITONGSHIFOUYOUITJINHANGWE": "23a"
+        }
+      ],
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2780,
+      "key": "DINGDANBIANHAO",
+      "meta": {
+        "is_clear": true
+      },
+      "value": "cmp-sdffrsgfsefds",
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2781,
+      "key": "DINGDANLEIXING",
+      "meta": {
+        "is_clear": true
+      },
+      "value": "sdsdfdsd",
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2782,
+      "key": "SHENQINGREN",
+      "meta": {
+        "is_clear": true
+      },
+      "value": "df",
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2783,
+      "key": "SHENQINGSHIJIAN",
+      "meta": {
+        "is_clear": true
+      },
+      "value": "dfd",
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2784,
+      "key": "SHENQINGYUANYIN",
+      "meta": {
+        "is_clear": true
+      },
+      "value": "1234",
+      "choice": []
+    },
+    {
+      "type": "STRING",
+      "id": 2792,
+      "key": "ZUZHI",
+      "meta": {
+        "is_clear": false
+      },
+      "value": "",
+      "choice": []
+    },
+    {
+      "type": "MEMBERS",
+      "id": 2793,
+      "key": "ZUZHIGUANLIYUAN",
+      "meta": {
+        "member_scope": {
+          "scope_type": "open",
+          "filter_info": {
+            "type": "default",
+            "value": ""
+          }
+        },
+        "is_clear": false
+      },
+      "value": "lijun.zhang@carizon.work",
+      "choice": []
+    },
+    {
+      "type": "MEMBERS",
+      "id": 2794,
+      "key": "XITONGGUANLIYUAN",
+      "meta": {
+        "is_clear": false,
+        "member_scope": {
+          "scope_type": "open",
+          "filter_info": {
+            "type": "default",
+            "value": ""
+          }
+        }
+      },
+      "value": "lijun.zhang@carizon.work",
+      "choice": []
+    }
+  ],
+  "is_draft": false,
+  "attention": false,
+  "id": 198
+}

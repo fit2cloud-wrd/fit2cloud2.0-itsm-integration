@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "/cmdb/ci/add",
+      "method": "POST",
+      "parameter": []
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "/cmdb/ci/update",
+      "method": "POST",
+      "parameter": []
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY",
+      "endpoint": "/cmdb/ci/list",
+      "method": "POST",
+      "parameter": []
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_DELETE",
+      "endpoint": "/cmdb/ci/delete",
+      "method": "POST",
+      "parameter": []
+    }
+  ]
+}

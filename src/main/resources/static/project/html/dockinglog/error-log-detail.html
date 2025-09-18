@@ -1,0 +1,16 @@
+<div layout-fill ng-cloak>
+    <div layout-fill class="cloud-server-info">
+        <md-tabs layout-fill md-dynamic-height md-border-bottom>
+            <md-button layout-fill class="md-primary" ng-click="closeInformation()">
+                <div>{{'i18n_close' | translator:'关闭'}}</div>
+            </md-button>
+            <md-tab label="{{'i18n_mc_log_details' | translator:'日志详情'}}">
+                <md-content class="cloud-server-info-content">
+                    <div class="md-dialog-content">
+                        <pre style="white-space: pre-wrap;" ng-bind="message"></pre>
+                    </div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </div>
+</div>

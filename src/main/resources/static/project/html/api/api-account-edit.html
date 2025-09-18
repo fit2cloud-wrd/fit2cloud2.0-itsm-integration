@@ -1,0 +1,184 @@
+<div layout="column" layout-fill cg-busy="{promise:apiAccountEditLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div ng-if="edit">{{'i18n_edit_api_account' | translator:'编辑API账号'}}</div>
+            <div ng-if="!edit">{{'i18n_create_api_account' | translator:'创建API账号'}}</div>
+        </div>
+    </md-toolbar>
+    <md-content flex="auto">
+        <div wizard="wizard" ng-if="show">
+            <wizard-step id="1">
+                <form name="apiAccountForm1" class="md-padding">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_api_account_name' | translator:'账号名称'}}</label>
+                        <input minlength="2" md-maxlength="255" required name="name"
+                               ng-model="currentApiAccount.name">
+                        <div ng-messages="apiAccountForm1.name.$error">
+                            <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                            <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <single-select result="currentApiAccount.providerFactoryId"
+                                   required="true" options="providerFactoryOptions" label="{{'i18n_vendor' | translator:'厂商'}}"
+                                   value="id" text="name" change="getTemplate()">
+                    </single-select>
+
+                    <single-select result="currentApiAccount.systemType"
+                                   required="true" options="systemTypeOptions" label="{{'i18n_account_type' | translator:'账号类型'}}"
+                                   value="value" text="lable">
+                    </single-select>
+
+                    <single-select result="currentApiAccount.version"
+                                   required="true" options="versionOptions" label="{{'i18n_api_version' | translator:'API 版本'}}"
+                                   value="value" text="lable">
+                    </single-select>
+
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>{{'i18n_api_endpoint' | translator:'API Endpoint'}}</label>
+                        <input minlength="2" md-maxlength="255" required name="apiEndpoint"
+                               ng-model="currentApiAccount.apiEndpoint">
+                        <div ng-messages="apiAccountForm1.apiEndpoint.$error">
+                            <div ng-message="required">{{'i18n_required' | translator:'必填'}}.</div>
+                            <div ng-message="md-maxlength">{{'i18n_error_exceed_255_c' | translator:'不要超过255个字符'}}</div>
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                {{'i18n_length_range_2_255' | translator:'请在2-255字符以内'}}
+                            </div>
+                        </div>
+                        <div class="hint product-hint">
+                            {{'i18n_api_endpoint_description' | translator:'填写服务地址，例：http://172.xxx.xxx.14'}}
+                        </div>
+                    </md-input-container>
+
+                    <div ng-repeat="tmp in tmpList" layout="column">
+                        <span ng-if="ifShow(tmp, currentApiAccount)">
+                            <md-input-container class="md-block" ng-if="tmp.type === 'password'">
+                                <label>{{tmp.label}}</label>
+                                <i id="eye" class="fa fa-eye f2c-eye" aria-hidden="true" ng-click="view()"></i>
+                                <input ng-required="tmp.required === true" name="name" ng-model="tmp.defaultValue" type="{{tmp.type}}"
+                                       id="password" autocomplete="off" ng-change="changeTmpValue(tmp)">
+                                <div ng-messages="apiAccountForm1.name.$error">
+                                    <div ng-message="required"> {{'i18n_required' | translator}}.</div>
+                                </div>
+                                <div class="md-errors-spacer"></div>
+                                <div class="hint product-hint" ng-bind-html="tmp.description | toTrusted"
+                                     ng-if="tmp.description"></div>
+                            </md-input-container>
+
+                            <md-input-container class="md-block" ng-if="tmp.type == 'boolean'">
+                                <label>{{tmp.label}}</label>
+                                <md-switch class="md-primary template-switch" ng-model="tmp.defaultValue" ng-change="changeTmpValue(tmp)">
+                                </md-switch>
+                                <div class="md-errors-spacer"></div>
+                                <div class="hint product-hint" ng-bind-html="tmp.description | toTrusted" ng-if="tmp.description"></div>
+                            </md-input-container>
+
+                            <multiple-select results="tmp.defaultValue"
+                                             required="{{tmp.required}}" options="tmp.optionList"
+                                             label="{{tmp.label}}"
+                                             value="{{tmp.valueField}}" text="{{tmp.textField}}" item="tmp"
+                                             change="changeTmpValue(tmp)"
+                                             ng-if="tmp.type === 'multiSelect'">
+                            </multiple-select>
+
+                            <div ng-if="tmp.type === 'combobox'">
+                                <single-select ng-if="tmp.type === 'combobox'"
+                                               name="{{tmp.name}}"
+                                               label="{{tmp.label}}"
+                                               result="tmp.defaultValue"
+                                               required="{{tmp.required}}"
+                                               options="tmp.optionList"
+                                               value="{{tmp.valueField}}"
+                                               text="{{tmp.textField}}"
+                                               description="{{tmp.descField}}"
+                                               change="changeTmpValue(tmp)"
+                                               item="tmp">
+                                </single-select>
+                            </div>
+
+                            <md-input-container class="md-block" ng-if="tmp.type !== 'password' && tmp.type !== 'combobox' && tmp.type !== 'multiSelect' && tmp.type != 'boolean' && !tmp.unShow">
+                                <label>{{tmp.label}}</label>
+                                <input ng-required="tmp.required === true" name="name" ng-model="tmp.defaultValue" type="{{tmp.type}}"
+                                       ng-change="changeTmpValue(tmp)"
+                                       autocomplete="off">
+                                <div ng-messages="apiAccountForm1.name.$error">
+                                    <div ng-message="required">{{'i18n_required' | translator}}</div>
+                                </div>
+                                <div class="md-errors-spacer"></div>
+                                <div class="hint product-hint" ng-bind-html="tmp.description | toTrusted"
+                                     ng-if="tmp.description"></div>
+                            </md-input-container>
+                        </span>
+                    </div>
+                    <md-input-container class="md-block">
+                        <label style="margin-bottom: 10px"> {{'i18n_auto_sync' | translator: '自动同步'}}</label>
+                        <md-switch ng-model="currentApiAccount.autoSync" class="md-primary message-add-edit-template-switch"
+                                   aria-label="enable"></md-switch>
+                    </md-input-container>
+
+                </form>
+            </wizard-step>
+            <wizard-step id="2">
+                <div ng-if="!edit" style="color:orange">提示：请勾选要添加的API地址，账号添加完成后，您可在API地址页面查看和编辑API地址！</div>
+                <div ng-if="edit" style="color:orange">提示：若要编辑API地址信息，请至API地址页面进行编辑！</div>
+                <div flex layout="column" class="dynamic-table" layout-fill>
+                    <table class="table" style="width: 100%;">
+                        <thead>
+                        <tr>
+                            <th ng-if="!edit">
+                                <div>
+                                    <md-checkbox md-no-ink aria-label="{{'check_box'| translator}}" class="md-primary" ng-model="enableAll" ng-change="changeAllSelected(enableAll)">
+                                    </md-checkbox>
+                                </div>
+                            </th>
+                            <th class="text-center">{{'i18n_account_business_type' | translator:'业务类型'}}</th>
+                            <th class="text-center">{{'i18n_api_type' | translator:'API 功能'}}</th>
+                            <th class="text-center">{{'i18n_api_address' | translator:'API 地址'}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in currentApiAccount.defaultApiList track by $index"
+                            ng-class="{'tr-selected':selected === item.$$hashKey}">
+                            <td has-permissions="API_ACCOUNT:READ+EDIT" ng-if="!edit">
+                                <md-checkbox md-no-ink aria-label="是否启用"
+                                             ng-model="item.enable"
+                                             class="md-primary"></md-checkbox>
+                            </td>
+                            <td>{{item.systemTypeName}}</td>
+                            <td>{{item.apiTypeName}}</td>
+                            <td>{{item.endpoint}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="md-errors-spacer"></div>
+                </div>
+            </wizard-step>
+            <wizard-step id="bkCmdbV2c">
+                <form name="apiAccountForm3" class="md-padding">
+                    <md-input-container class="md-block">
+                        <label style="margin-bottom: 10px"> {{'i18n_cmdb_business_sync_enable' | translator: '是否开启业务同步'}} </label>
+                        <md-switch ng-model="currentApiAccount.customContentInst.syncEnable" class="md-primary message-add-edit-template-switch"
+                                   aria-label="enable"></md-switch>
+                    </md-input-container>
+
+                    <div ng-repeat="(configIndex , tmp) in currentApiAccount.customContentInst.levelConfigList" layout="column">
+                        <md-input-container class="md-block" >
+                            <label>{{tmp.label}}</label>
+                            <input required  name="name" ng-model="tmp.defaultValue"  autocomplete="off">
+                            <div ng-messages="apiAccountForm3.name.$error">
+                                <div ng-message="required">{{'i18n_required' | translator}}</div>
+                            </div>
+                            <div class="md-errors-spacer"></div>
+                            <div class="hint product-hint" ng-bind-html="tmp.description | toTrusted"
+                                 ng-if="tmp.description"></div>
+                        </md-input-container>
+                    </div>
+
+                </form>
+            </wizard-step>
+        </div>
+    </md-content>
+</div>

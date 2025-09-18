@@ -1,0 +1,338 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "/api/c/compapi/v2/cc/batch_create_inst/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [
+        {
+          "origin_field": "vm_model",
+          "oirigin_field_type": "常量",
+          "target_field": "bk_obj_id",
+          "target_field_type": "String",
+          "description": "模型名称",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "id",
+          "oirigin_field_type": "String",
+          "target_field": "bk_inst_name",
+          "target_field_type": "String",
+          "description": "实例ID",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": "id"
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "/api/c/compapi/v2/cc/batch_update_inst/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [{
+        "origin_field": "vm_model",
+        "oirigin_field_type": "常量",
+        "target_field": "bk_obj_id",
+        "target_field_type": "String",
+        "description": "模型名称",
+        "origin_field_source": "constant",
+        "origin_field_table": "",
+        "origin_field_name": ""
+      }]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_DELETE",
+      "endpoint": "/api/c/compapi/v2/cc/batch_delete_inst/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [{
+        "origin_field": "vm_model",
+        "oirigin_field_type": "常量",
+        "target_field": "bk_obj_id",
+        "target_field_type": "String",
+        "description": "模型名称",
+        "origin_field_source": "constant",
+        "origin_field_table": "",
+        "origin_field_name": ""
+      }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY",
+      "endpoint": "/api/c/compapi/v2/cc/search_inst_by_object/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [
+        {
+          "origin_field": "vm_model",
+          "oirigin_field_type": "常量",
+          "target_field": "bk_obj_id",
+          "target_field_type": "String",
+          "description": "模型名称",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "id",
+          "oirigin_field_type": "String",
+          "target_field": "bk_inst_name",
+          "target_field_type": "String",
+          "description": "实例ID",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": "id"
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE_HOST",
+      "endpoint": "api/c/compapi/v2/cc/add_host_to_resource/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "bk_host_innerip",
+          "target_field_type": "String",
+          "description": "管理IP",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "bk_cloud_inst_id",
+          "target_field_type": "String",
+          "description": "云主机实例ID",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "hostname",
+          "oirigin_field_type": "String",
+          "target_field": "bk_host_name",
+          "target_field_type": "String",
+          "description": "主机名称",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_cpu",
+          "target_field_type": "String",
+          "description": "CPU核心数",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_mem",
+          "target_field_type": "String",
+          "description": "内存",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_disk",
+          "target_field_type": "String",
+          "description": "磁盘",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "os",
+          "oirigin_field_type": "String",
+          "target_field": "bk_os_name",
+          "target_field_type": "String",
+          "description": "操作系统名称",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "biz_operator",
+          "target_field_type": "String",
+          "description": "归属人",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "createTime",
+          "oirigin_field_type": "String",
+          "target_field": "create_time",
+          "target_field_type": "String",
+          "description": "创建时间",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE_HOST",
+      "endpoint": "/api/c/compapi/v2/cc/update_host/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [{
+        "origin_field": "managementIp",
+        "oirigin_field_type": "String",
+        "target_field": "bk_host_innerip",
+        "target_field_type": "String",
+        "description": "management_ip",
+        "origin_field_source": "table",
+        "origin_field_table": "cloud_server",
+        "origin_field_name": ""
+      },{
+        "origin_field": "instanceUuid",
+        "oirigin_field_type": "String",
+        "target_field": "bk_cloud_inst_id",
+        "target_field_type": "String",
+        "description": "云主机实例ID",
+        "origin_field_source": "table",
+        "origin_field_table": "cloud_server",
+        "origin_field_name": ""
+      },
+        {
+          "origin_field": "hostname",
+          "oirigin_field_type": "String",
+          "target_field": "bk_host_name",
+          "target_field_type": "String",
+          "description": "主机名称",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_cpu",
+          "target_field_type": "String",
+          "description": "CPU核心数",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_mem",
+          "target_field_type": "String",
+          "description": "内存",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "bk_disk",
+          "target_field_type": "String",
+          "description": "磁盘",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "os",
+          "oirigin_field_type": "String",
+          "target_field": "bk_os_name",
+          "target_field_type": "String",
+          "description": "操作系统名称",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "biz_operator",
+          "target_field_type": "String",
+          "description": "归属人",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "createTime",
+          "oirigin_field_type": "String",
+          "target_field": "create_time",
+          "target_field_type": "String",
+          "description": "创建时间",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_DELETE_HOST",
+      "endpoint": "/api/c/compapi/v2/cc/delete_host/",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": []
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY_HOST",
+      "endpoint": "api/c/compapi/v2/cc/list_hosts_without_biz",
+      "method": "POST",
+      "company": "LANJINGCOMPANY",
+      "parameter": [
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "bk_host_innerip",
+          "target_field_type": "String",
+          "description": "management_ip",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "PROCESS",
+      "apiType": "PROCESS_CREATE",
+      "endpoint": "/api/c/compapi/v2/itsm/create_ticket/",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "managementIp",
+          "oirigin_field_type": "String",
+          "target_field": "bk_host_innerip",
+          "target_field_type": "String",
+          "description": "management_ip",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}

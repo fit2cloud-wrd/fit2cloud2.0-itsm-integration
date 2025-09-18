@@ -1,0 +1,258 @@
+{
+  "data": [
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_CREATE",
+      "endpoint": "api/v3/create/instance/object/cloud_server",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "bk_inst_name",
+          "target_field_type": "String",
+          "description": "uuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "cpu_core_num",
+          "target_field_type": "String",
+          "description": "cpu_core_num",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "memory_num",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "disk",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "belongHost",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "ips",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "appUser",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "name",
+          "oirigin_field_type": "String",
+          "target_field": "systemName",
+          "target_field_type": "String",
+          "description": "workspace",
+          "origin_field_source": "table",
+          "origin_field_table": "workspace",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "[\"fit2cloud\"]",
+          "oirigin_field_type": "常量",
+          "target_field": "sources",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "inst_status",
+          "target_field_type": "String",
+          "description": "实例状态",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_UPDATE",
+      "endpoint": "api/v3/update/instance/object/cloud_server/inst/%s",
+      "method": "PUT",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "bk_inst_name",
+          "target_field_type": "String",
+          "description": "uuid",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceName",
+          "oirigin_field_type": "String",
+          "target_field": "name",
+          "target_field_type": "String",
+          "description": "name",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "cpu",
+          "oirigin_field_type": "Integer",
+          "target_field": "cpu_core_num",
+          "target_field_type": "String",
+          "description": "cpu_core_num",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "memory",
+          "oirigin_field_type": "Integer",
+          "target_field": "memory_num",
+          "target_field_type": "String",
+          "description": "memory",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "disk",
+          "oirigin_field_type": "Integer",
+          "target_field": "disk",
+          "target_field_type": "String",
+          "description": "disk",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "host",
+          "oirigin_field_type": "String",
+          "target_field": "belongHost",
+          "target_field_type": "String",
+          "description": "host",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "ipArray",
+          "oirigin_field_type": "String",
+          "target_field": "ips",
+          "target_field_type": "String",
+          "description": "ipArray",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "owner",
+          "oirigin_field_type": "String",
+          "target_field": "appUser",
+          "target_field_type": "String",
+          "description": "owner",
+          "origin_field_source": "table",
+          "origin_field_table": "vm_cloud_server",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "name",
+          "oirigin_field_type": "String",
+          "target_field": "systemName",
+          "target_field_type": "String",
+          "description": "workspace",
+          "origin_field_source": "table",
+          "origin_field_table": "workspace",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "[\"fit2cloud\"]",
+          "oirigin_field_type": "常量",
+          "target_field": "sources",
+          "target_field_type": "String",
+          "description": "固定值",
+          "origin_field_source": "constant",
+          "origin_field_table": "",
+          "origin_field_name": ""
+        },
+        {
+          "origin_field": "instanceStatus",
+          "oirigin_field_type": "String",
+          "target_field": "inst_status",
+          "target_field_type": "String",
+          "description": "实例状态",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    },
+    {
+      "systemType": "CMDB",
+      "apiType": "CMDB_QUERY",
+      "endpoint": "api/v3/find/instassociation/object/cloud_server",
+      "method": "POST",
+      "parameter": [
+        {
+          "origin_field": "instanceUuid",
+          "oirigin_field_type": "String",
+          "target_field": "bk_inst_name",
+          "target_field_type": "String",
+          "description": "cloud_server_id",
+          "origin_field_source": "table",
+          "origin_field_table": "cloud_server",
+          "origin_field_name": ""
+        }
+      ]
+    }
+  ]
+}
