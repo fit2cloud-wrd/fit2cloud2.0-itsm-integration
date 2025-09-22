@@ -1,0 +1,18 @@
+<div layout-fill ng-controller="SystemGrantCtrl" cg-busy="{promise:loadingLayer,minDuration:500}" ng-cloak>
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div>{{'i18n_authorize_to_the_workspace' | translator}}</div>
+        </div>
+    </md-toolbar>
+    <form name="systemGrantFrom" class="side-content">
+        <tree data="model.treeData" api="noroot" type="checkbox" class="f2c-tree"></tree>
+    </form>
+    <div layout="row" layout-align="start center" layout-margin>
+        <md-button class="md-raised" ng-click="toggleForm();">
+            {{'i18n_cancel' | translator:'取消'}}
+        </md-button>
+        <md-button class="md-raised md-primary" ng-disabled="commit || systemGrantFrom.$invalid" ng-click="submit()">
+            {{'i18n_save' | translator:'保存'}}
+        </md-button>
+    </div>
+</div>

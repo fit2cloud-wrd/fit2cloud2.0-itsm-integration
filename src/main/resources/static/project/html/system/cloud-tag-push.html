@@ -1,0 +1,17 @@
+<div layout-fill ng-controller="CloudTagPushSettingController" class="content-backdrop" ng-cloak
+     cg-busy="{promise:loadingLayer,minDuration:500}">
+    <div layout="column" layout-fill>
+        <md-toolbar class="content-toolbar">
+            <div class="md-toolbar-tools">
+                <div>{{'i18n_tag_setting' | translator: '标签设置'}}</div>
+            </div>
+        </md-toolbar>
+        <md-content flex="100">
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="{{'i18n_cloud_tag_push_set' | translator:'公有云标签推送设置'}}">
+                    <div ng-include="publicCloudTagPushUrl"></div>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>

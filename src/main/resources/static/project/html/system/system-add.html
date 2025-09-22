@@ -1,0 +1,89 @@
+<div ng-controller="SystemAddCtrl" ng-cloak cg-busy="{promise:loading,minDuration:500}" layout-fill layout="column">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div>{{'i18n_create' | translator}}{{pageParam.title}}</div>
+        </div>
+    </md-toolbar>
+    <md-content flex="auto">
+        <div wizard="wizard">
+            <wizard-step id="1">
+                <form name="SystemForm" class="md-padding">
+                    <div layout="column">
+                        <md-input-container class="md-block">
+                            <label>{{pageParam.title}}{{'i18n_system_name' | translator}}</label>
+                            <input md-maxlength="30" required name="name" ng-model="item.name">
+                            <div ng-messages="SystemForm.name.$error">
+                                <div ng-message="required">{{'i18n_required' | translator}}.</div>
+                                <div ng-message="md-maxlength">{{'i18n_error_exceed_30_c' | translator}}</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block" ng-if="pageParam.type === 'CUSTOM_SYSTEM'">
+                            <label>{{pageParam.title}}{{'i18n_system_code' | translator}}</label>
+                            <input name="code" ng-model="item.code" ng-pattern="/^\w{3,20}$/">
+                            <div ng-messages="SystemForm.code.$error">
+                                <div ng-message="required">{{'i18n_required' | translator}}</div>
+                                <div ng-message="pattern">{{'i18n_system_pattern' | translator}}.</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>{{pageParam.title}}{{'i18n_label_alias' | translator:'别名'}}</label>
+                            <input md-maxlength="30" required name="alias" ng-model="item.alias"  ng-change="onSystemAliasChange()">
+                            <div ng-messages="SystemForm.alias.$error">
+                                <div ng-message="required">{{'i18n_required' | translator}}.</div>
+                                <div ng-message="md-maxlength">{{'i18n_error_exceed_30_c' | translator}}</div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>{{'i18n_system_desc' | translator}}</label>
+                            <input md-maxlength="50" name="description" ng-model="item.description">
+                            <div ng-messages="SystemForm.description.$error">
+                                <div ng-message="md-maxlength">{{'i18n_error_exceed_50_c' | translator:'不要超过50个字符'}}</div>
+                            </div>
+                        </md-input-container>
+
+                        <multiple-select
+                                name="customSysIds"
+                                value="id"
+                                label="请选择应用系统"
+                                options="customSystemList"
+                                text="tagValue"
+                                results="item.customSysIds"
+                                required="false"
+                                ng-if="pageParam.type === 'APPLICATION'"
+                        ></multiple-select>
+                        <!-- custom_system end -->
+                        <div layout="row" flex="90" style="margin-top: 10px;" ng-if="item.selectType=='multiple' && item.systemTypes && item.systemTypes.length>0">
+                            <md-button layout="row" layout-align="center" class="md-raised md-success"
+                                       ng-disabled="SystemForm.$invalid || multipleTypes.length===systemTypes.length"
+                                       style="width: 95%;" ng-click="addMultipleType()">
+                                {{'i18n_create_multi_type' | translator}}
+                            </md-button>
+                        </div>
+
+                        <div layout="column" ng-if="pageParam.type === 'CUSTOM_SYSTEM'">
+                            <single-select name="owner"
+                                           label="{{'i18n_project_leader' | translator:'负责人'}}"
+                                           result="item.owner"
+                                           options="userList"
+                                           value="id" text="name"
+                                           item="user">
+                            </single-select>
+                        </div>
+                    </div>
+                </form>
+                <button ng-show="false" id="SystemForm" ng-disabled="SystemForm.$invalid || multipleTypes.length===0"></button>
+            </wizard-step>
+            <wizard-step id="2">
+                <div layout-fill cg-busy="{promise:loadingLayer,minDuration:500}" ng-cloak>
+                    <md-input-container class="md-block" style="height: 28px;">
+                        <label>{{'i18n_search' | translator}}</label>
+                        <input ng-model="filterParam" type="search" ng-change="authWorkspaceTreeFilter(filterParam)"/>
+                    </md-input-container>
+                      <tree data="treeData" api="noroot" type="checkbox" class="f2c-tree"></tree>
+                </div>
+            </wizard-step>
+        </div>
+
+    </md-content>
+</div>

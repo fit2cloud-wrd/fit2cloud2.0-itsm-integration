@@ -1,0 +1,54 @@
+<div ng-controller="SystemEditCtrl" ng-cloak cg-busy="{promise:loading,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div>{{'i18n_edit' | translator}}{{pageParam.title}}</div>
+        </div>
+    </md-toolbar>
+    <form name="SystemForm" class="md-padding">
+        <div layout="column">
+            <md-input-container class="md-block">
+                <label>{{pageParam.title}}{{'i18n_label_alias' | translator:'别名'}}</label>
+                <input md-maxlength="30" required name="alias" ng-model="item.alias">
+                <div ng-messages="SystemForm.alias.$error">
+                    <div ng-message="required">{{'i18n_required' | translator}}.</div>
+                    <div ng-message="md-maxlength">{{'i18n_error_exceed_30_c' | translator}}</div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>{{'i18n_system_desc' | translator}}</label>
+                <input md-maxlength="50" name="description" ng-model="item.description">
+                <div ng-messages="SystemForm.description.$error">
+                    <div ng-message="md-maxlength">{{'i18n_error_exceed_50_c' | translator:'不要超过50个字符'}}</div>
+                </div>
+            </md-input-container>
+
+            <multiple-select
+                    name="customSysIds"
+                    value="id"
+                    label="请选择应用系统"
+                    options="customSystemList"
+                    text="tagValueAlias"
+                    results="item.customSysIds"
+                    required="false"
+            ></multiple-select>
+            <div layout="row" flex="90" style="margin-top: 10px;" ng-if="item.selectType=='multiple' && item.systemTypes && item.systemTypes.length>0">
+                <md-button layout="row" layout-align="center" class="md-raised md-success"
+                           ng-disabled="SystemForm.$invalid || multipleTypes.length===systemTypes.length"
+                           style="width: 95%;" ng-click="addMultipleType()">
+                    {{'i18n_create_multi_type' | translator}}
+                </md-button>
+            </div>
+        </div>
+
+    </form>
+    <div layout="row" layout-align="start center" layout-margin>
+        <md-button class="md-raised" ng-click="toggleForm();">
+            {{'i18n_cancel' | translator:'取消'}}
+        </md-button>
+        <md-button class="md-raised md-primary" ng-disabled="SystemForm.$invalid || (item.selectType == 'multiple' && (!multipleTypes || multipleTypes.length === 0) && (!systemTypes || systemTypes.length === 0))"
+                   ng-click="submit(s)">
+            {{'i18n_save' | translator:'保存'}}
+        </md-button>
+    </div>
+</div>

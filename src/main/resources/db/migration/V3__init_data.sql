@@ -1,0 +1,41 @@
+INSERT INTO `pci_external_system_org` (
+    `id`,
+    `parent_id`,
+    `nc_org_id`,
+    `name`,
+    `short_name`,
+    `type`,
+    `business_corporation`,
+    `org_admin_no`,
+    `org_admin_name`,
+    `business_unit_code`,
+    `org_admin_post_name`,
+    `nc_org_parent_id`,
+    `parent_name`,
+    `org_admin_post_id`,
+    `business_unit_name`,
+    `revoked`,
+    `company_code`,
+    `company_cdescription`
+) VALUES (
+    '16f7ecc0-48ca-4e46-894b-ed0d8f998dfe',
+    '',
+    '',
+    '总部',
+    '总部',
+    'corp',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '总部',
+    'N',
+    '001',
+    '总部'
+);
+
+

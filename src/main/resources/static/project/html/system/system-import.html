@@ -1,0 +1,66 @@
+<div ng-cloak cg-busy="{promise:editLoadingLayer,minDuration:500}">
+    <md-toolbar class="content-toolbar">
+        <div class="md-toolbar-tools">
+            <div> {{'i18n_system_import_file' | translator}}</div>
+            <md-button class="md-primary"  ng-click="savesSystemTags('CUSTOM_SYSTEM')">
+                <md-icon>attachment</md-icon>
+                {{'i18n_label_file' | translator}}
+            </md-button>
+        </div>
+
+    </md-toolbar>
+    <form name="userUploadForm" class="md-padding">
+        <div class="md-dialog-content">
+            <md-choose-file layout="row" file="file" accept=".xls,.xlsx" placeholder="{{'i18n_select_excel_file' | translator}}" required="true" ></md-choose-file>
+        </div>
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="toggleForm()">
+                {{'i18n_cancel' | translator:'取消'}}
+            </md-button>
+            <md-button class="md-raised md-primary" ng-click="uploadFile(file, 'CUSTOM_SYSTEM')" ng-disabled="!file || file.length == 0">
+                {{'i18n_save' | translator:'保存'}}
+            </md-button>
+        </md-dialog-actions>
+    </form>
+
+    <div flex="" layout="column" layout-fill="" class="layout-fill layout-column flex"
+         ng-if="importErrorMsgList && importErrorMsgList.length > 0"
+         style="width: auto;
+             margin: 20px 10px;
+             box-shadow: inset 0px 0px 0px 0.5px rgba(0, 0, 0, 0.38);">
+        <md-tabs md-dynamic-height md-border-bottom style="margin: 0 20px 0 20px;">
+            <md-tab label="{{'i18n_import_result' | translator}}">
+                <div style="margin-left: 5%;width: 90%; padding: 15px 0">
+                    <table class="table" >
+                        <thead class="order-head">
+                        <tr>
+                            <th>{{'i18n_excel_number_rows' | translator:'excel行号'}}</th>
+                            <th>{{'i18n_error_message' | translator:'错误信息'}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="error in importErrorMsgList" >
+                            <td>第{{error.row}}行</td>
+                            <td>{{error.errorMsg}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </md-tab>
+        </md-tabs>
+    </div>
+
+
+    <div flex="" layout="column" layout-fill="" class="layout-fill layout-column flex"
+         style="width: auto;
+             margin: 20px 10px;
+             box-shadow: inset 0px 0px 0px 0.5px rgba(0, 0, 0, 0.38);">
+        <md-tabs md-dynamic-height md-border-bottom style="margin: 0 20px 0 20px;">
+            <md-tab label="{{'i18n_import_organ_example' | translator }}">
+                <p>{{'i18n_file_import_notify'|translator}}</p>
+                <p><img style="width: 100%" src="project/html/system/system-import.png"></p>
+            </md-tab>
+        </md-tabs>
+    </div>
+</div>
+
