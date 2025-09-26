@@ -15,6 +15,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping(value = "/process")
 public class ProcessIntegrationController {
+
     @Resource
     private ProcessIntegrationService processIntegrationService;
 

@@ -38,11 +38,6 @@ public class PciSyncSettingController {
 
     /**
      * 查询同步机构列表
-     *
-     * @param goPage
-     * @param pageSize
-     * @param templateRequest
-     * @return
      */
     @I18n
     @RequestMapping(value = "/org/list/{goPage}/{pageSize}")
